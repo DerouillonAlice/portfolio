@@ -1,85 +1,75 @@
-<script setup>
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-</script>
-
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
-
-    <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-
-      <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/about">About</RouterLink>
-      </nav>
+<div :class="['w-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-5', activeColor]">
+  <Sidebar class="bg-background text-white" />
+    <div class="content overflow-auto rounded-lg m-5 col-span-9 bg-background">
+      <Navbar />
+      <router-view />
     </div>
-  </header>
-
-  <RouterView />
+  </div>
 </template>
 
+
+<script>
+import Sidebar from "@/components/Sidebar.vue";
+import Navbar from "@/components/Navbar.vue";
+
+export default {
+  components: {
+    Sidebar,
+    Navbar,
+  },
+  computed: {
+    activeColor() {
+      const routeName = this.$route.name;
+      return {
+        accueil: "bg-blue-500",
+        portfolio: "bg-purple-500",
+        cv: "bg-green-500",
+        contact: "bg-red-500",
+      }[routeName] || "bg-blue-500"; // Valeur par défaut si aucune route ne correspond
+    },
+  },
+};
+</script>
+
 <style scoped>
-header {
-  line-height: 1.5;
-  max-height: 100vh;
+.bg-blue-500 {
+  background-color: #2d89ef;
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.bg-purple-500 {
+  background-color: #800080;
 }
 
-nav {
-  width: 100%;
-  font-size: 12px;
-  text-align: center;
-  margin-top: 2rem;
+.bg-green-500 {
+  background-color: #00a300;
 }
 
-nav a.router-link-exact-active {
-  color: var(--color-text);
+.bg-red-500 {
+  background-color: #e51400;
 }
 
-nav a.router-link-exact-active:hover {
-  background-color: transparent;
+.bg-gray-800 {
+  background-color: #333;
 }
 
-nav a {
-  display: inline-block;
-  padding: 0 1rem;
-  border-left: 1px solid var(--color-border);
+.rounded-lg {
+  border-radius: 20px;
 }
 
-nav a:first-of-type {
-  border: 0;
+.m-5 {
+  margin: 20px;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+.w-full {
+  width: 100vw;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.col-span-9 {
+  grid-column: span 9;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
-
-  nav {
-    text-align: left;
-    margin-left: -1rem;
-    font-size: 1rem;
-
-    padding: 1rem 0;
-    margin-top: 1rem;
-  }
+.bg-background {
+  background-color: #1e1d1d;
 }
 </style>
