@@ -1,13 +1,12 @@
 <template>
-<div :class="['w-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-5', activeColor]">
-  <Sidebar class="bg-background text-white" />
-    <div class="content overflow-auto rounded-lg m-5 col-span-9 bg-background">
+  <div :class="['w-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor]">
+    <Sidebar class="bg-background text-white" />
+    <div class="content overflow-auto rounded-lg m-5 col-span-12  lg:col-span-9 bg-background">
       <Navbar />
       <router-view />
     </div>
   </div>
 </template>
-
 
 <script>
 import Sidebar from "@/components/Sidebar.vue";
@@ -22,8 +21,8 @@ export default {
     activeColor() {
       const routeName = this.$route.name;
       return {
-        accueil: "bg-blue-500",
-        portfolio: "bg-purple-500",
+        accueil: "bg-[url('/public/img/fond.svg')] bg-cover bg-center",
+        portfolio: "bg-[url('/public/img/fond.svg')] bg-cover bg-center",
         cv: "bg-green-500",
         contact: "bg-red-500",
       }[routeName] || "bg-blue-500"; // Valeur par défaut si aucune route ne correspond
