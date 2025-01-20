@@ -1,7 +1,7 @@
 <template>
-  <div :class="['w-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor]">
-    <Sidebar class="bg-background text-white" />
-    <div class="content overflow-auto rounded-lg m-5 col-span-12  lg:col-span-9 bg-background">
+  <div :class="['w-screen','max-h-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor]">
+    <Sidebar class="bg-background text-white custom-height" />
+    <div class="content overflow-auto custom-height rounded-lg m-5 col-span-12  lg:col-span-9 bg-background p-6 xs:p-12">
       <Navbar />
       <router-view />
     </div>
