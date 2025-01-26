@@ -1,9 +1,9 @@
 <template>
   <div class="text-white ">
     <div class="mb-8">
-      <div class="relative mb-10 pl-8">
-        <h1 class="text-4xl font-bold text-white no-underline">Curriculum vitae</h1>
-        <div class="absolute -bottom-4 left-12  h-2 w-64 bg-primary rounded-full"></div>
+      <div class="relative mb-10 lg:pl-8">
+        <h1 class="h1">Curriculum vitae</h1>
+        <div class="absolute -bottom-4 lg:left-10  h-2 w-64 bg-primary rounded-full"></div>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">

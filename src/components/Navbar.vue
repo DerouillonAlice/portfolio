@@ -4,29 +4,33 @@
       to="/"
       class="text-white font-bold no-underline hover:text-primary hover:scale-110 transition-all"
       exact-active-class="text-primary"
+      v-slot="{ isActive }"
     >
-      Accueil
+      <span :class="{ 'text-primary': isActive }">Accueil</span>
     </router-link>
     <router-link
       to="/portfolio"
       class="text-white font-bold no-underline hover:text-primary hover:scale-110 transition-all"
       exact-active-class="text-primary"
+      v-slot="{ isActive }"
     >
-      Portfolio
+      <span :class="{ 'text-primary': isActive }">Portfolio</span>
     </router-link>
     <router-link
       to="/cv"
       class="text-white font-bold no-underline hover:text-primary hover:scale-110 transition-all"
       exact-active-class="text-primary"
+      v-slot="{ isActive }"
     >
-      CV
+      <span :class="{ 'text-primary': isActive }">CV</span>
     </router-link>
     <router-link
       to="/contact"
       class="text-white font-bold no-underline hover:text-primary hover:scale-110 transition-all"
       exact-active-class="text-primary"
+      v-slot="{ isActive }"
     >
-      Contact
+      <span :class="{ 'text-primary': isActive }">Contact</span>
     </router-link>
   </nav>
 </template>
