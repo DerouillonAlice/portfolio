@@ -36,7 +36,7 @@
 
     <div>
       <div class="relative mb-8">
-        <h1 class=" text-xl lg:text-2xl font-bold text-white no-underline">Compétances</h1>
+        <h2 class=" text-xl lg:text-2xl font-bold text-white no-underline">Compétances</h2>
         <div class="absolute -bottom-3 left-0 right-0 h-2 w-20 bg-primary rounded-full"></div>
       </div>
 
@@ -45,8 +45,8 @@
         <h3 class="text-md text-secondary mb-3">DÉVELOPPEMENT WEB</h3>
         <div class="relative flex justify-center">
           <Splide
-            :options="{ type: 'loop', perPage: 4, breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } }, arrows: true, pagination: false }"
-            class="max-w-full">
+            :options="{ type: 'loop', perPage: 4, gap: '1rem', breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } }, arrows: true, pagination: false }"
+            class="max-w-full splide-custom-arrows">
             <SplideSlide v-for="(icon, index) in devIcons" :key="index">
               <div class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-32 h-32">
                 <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
@@ -62,8 +62,8 @@
         <h3 class="text-md text-secondary mb-3">AUTRE</h3>
         <div class="relative flex justify-center">
           <Splide
-            :options="{ type: 'loop', perPage: 4, breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } }, arrows: true, pagination: false }"
-            class="max-w-full">
+            :options="{ type: 'loop', perPage: 4, gap: '1rem', breakpoints: { 1024: { perPage: 3 }, 768: { perPage: 2 }, 640: { perPage: 1 } }, arrows: true, pagination: false }"
+            class="max-w-full splide-custom-arrows">
             <SplideSlide v-for="(icon, index) in otherIcons" :key="index">
               <div class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-32 h-32">
                 <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
@@ -109,4 +109,10 @@ export default {
 
 <style>
 @import '@splidejs/splide/dist/css/splide.min.css';
+
+.splide__arrow--prev {
+  left: -1.5rem; /* Adjust this value as needed */
+}
+
+
 </style>

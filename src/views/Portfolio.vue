@@ -94,12 +94,20 @@ export default {
           link: '#',
           imageUrl: 'img/mealflow.png'
         },
+        {
+          id: 6,
+          title: 'Parc du Marais',
+          description: 'Faire un truc qui dérange n\'est pas impoli, c\'est une stratégie.',
+          tags: ['SCSS'],
+          link: 'http://mmi23g08.sae301dev.ovh',
+          imageUrl: 'img/parc.png'
+        },
         // {
-        //   id: 6,
-        //   title: 'La Ferme de Fontenay',
+        //   id: 7,
+        //   title: 'Parc du Marais',
         //   description: 'Faire un truc qui dérange n\'est pas impoli, c\'est une stratégie.',
-        //   tags: ['VueJS', 'TailwindCSS'],
-        //   link: 'https://example.com/project6',
+        //   tags: ['SCSS'],
+        //   link: 'http://mmi23g08.sae301dev.ovh/index.php/bowling',
         //   imageUrl: 'https://example.com/image6.jpg'
         // },
       ],

@@ -9,7 +9,8 @@
     <section class="text-gray-400  body-font relative" id="contact">
 
       <div class="container md:px-5  mx-auto flex sm:flex-nowrap flex-wrap">
-        <div class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
+        <div
+          class="lg:w-2/3 md:w-1/2 bg-gray-900 rounded-lg overflow-hidden sm:mr-10 p-10 flex items-end justify-start relative">
           <iframe width="100%" height="100%" title="map" class="absolute inset-0" frameborder="0" marginheight="0"
             marginwidth="0" scrolling="no"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d42472.70454231684!2d4.034934979116988!3d48.29238734258561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47ee9857e787b7b1%3A0x57dd125566e84f75!2s10000%20Troyes!5e0!3m2!1sfr!2sfr!4v1737891293073!5m2!1sfr!2sfr"
@@ -29,11 +30,12 @@
         </div>
 
         <div class="lg:w-1/3 md:w-1/2 flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
-          <form action="https://formspree.io/f/mvolnkwp" method="post">
+          <form action="https://formspree.io/f/xldgglnd" method="POST">
             <h2 class="text-white text-lg mb-1 font-medium title-font">Contactez-moi</h2>
             <p class="leading-relaxed mb-5">Si vous aimez mon travail et que vous souhaitez bénéficier de mes
               services, envoyez-moi un message via le formulaire de contact.</p>
             <div class="relative mb-4">
+
               <label for="name" class="leading-7 text-sm text-gray-400">Nom</label>
               <input type="text" id="name" name="name"
                 class="w-full bg-background2 rounded border border-gray-700 focus:border-primary focus:ring-2 focus:ring-indigo-900 text-base outline-none text-gray-100 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out">
@@ -66,4 +68,3 @@
 <script>
 export default {};
 </script>
-

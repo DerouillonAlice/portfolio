@@ -1,9 +1,12 @@
 <template>
   <div :class="['w-screen','min-h-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor, 'transition-background']">
     <Sidebar class="bg-background text-white custom-height" />
-    <div class="content overflow-auto custom-height rounded-lg m-5 col-span-12  lg:col-span-9 bg-background p-6 xs:p-12">
+    <div class="content overflow-auto custom-height rounded-lg m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
       <Navbar />
-      <router-view />
+      <div class="flex-grow">
+        <router-view />
+      </div>
+      <Footer /> <!-- Add Footer component here -->
     </div>
   </div>
 </template>
@@ -11,11 +14,13 @@
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import Navbar from "@/components/Navbar.vue";
+import Footer from "@/components/Footer.vue"; // Import Footer component
 
 export default {
   components: {
     Sidebar,
     Navbar,
+    Footer, // Register Footer component
   },
   computed: {
     activeColor() {

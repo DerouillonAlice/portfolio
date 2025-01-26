@@ -10,6 +10,7 @@ export default {
         background: '#1e1d1d',
         background2: '#3b3636',
         primary: '#c8abff',
+        primaryhover: '#a98eff',
         secondary: '#bebbbb',
       },
 
