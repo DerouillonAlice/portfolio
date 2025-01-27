@@ -1,6 +1,6 @@
 <template>
-  <aside class="sidebar flex flex-col justify-between h-3/5 lg:h-screen">
-    <div class="h-full flex flex-col justify-between">
+  <aside class="sidebar flex flex-col justify-center h-3/5 lg:h-screen">
+    <div class="h-full flex flex-col justify-start">
       <div class="flex flex-row lg:flex-col mb-5">
         <img src="/src/assets/phto_cv.jpg" alt="Alice Derouillon"
           class="profile object-cover aspect-square w-1/3 h-auto lg:w-2/3 rounded-lg lg:aspect-auto mx-auto mb-0 lg:mb-5" />
@@ -11,14 +11,14 @@
         </div>
       </div>
       <button @click="toggleContactInfo" class="lg:hidden text-3xl text-primary cursor-pointer mb-3">
-        <i class="fas fa-chevron-up" :class="{ 'rotate-180': isContactInfoVisible  }"></i>
+        <i class="fas fa-chevron-up" :class="{ 'rotate-180': isContactInfoVisible }"></i>
       </button>
       <div :class="{ 'hidden': !isContactInfoVisible, 'block': isContactInfoVisible }"
-        class="contact-info-container lg:contents gap-5">
+        class="contact-info-container lg:contents gap-8">
         <ul class="contact-info flex flex-col gap-5 mb-3">
           <li class="flex flex-row justify-start gap-5">
             <div>
-              <i class="fas fa-map-marker-alt text-primary bg-background2 p-3 rounded-full h-10 w-10"></i>
+              <i class="fas fa-map-marker-alt text-primary bg-background2 p-3 rounded-md h-10 w-10"></i>
             </div>
             <div class="text-left">
               <p class="text-secondary text-sm">ADRESSE</p>
@@ -27,7 +27,7 @@
           </li>
           <li class="flex flex-row justify-start gap-5">
             <div>
-              <i class="fas fa-envelope text-primary bg-background2 p-3 rounded-full h-10 w-10"></i>
+              <i class="fas fa-envelope text-primary bg-background2 p-3 rounded-md h-10 w-10"></i>
             </div>
             <div class="text-left">
               <p class="text-secondary text-sm">EMAIL</p>
@@ -36,7 +36,7 @@
           </li>
           <li class="flex flex-row justify-start gap-5">
             <div>
-              <i class="fas fa-phone text-primary bg-background2 p-3 rounded-full h-10 w-10"></i>
+              <i class="fas fa-phone text-primary bg-background2 p-3 rounded-md h-10 w-10"></i>
             </div>
             <div class="text-left">
               <p class="text-secondary text-sm">TEL.</p>
@@ -44,17 +44,21 @@
             </div>
           </li>
         </ul>
-        <div class="mb-5 mt-10">
-          <router-link to="/contact" class="bg-background2 px-8 py-2 rounded-full transition-all hover:bg-primary hover:text-black hover:scale-105">Contactez-moi <span class="text-primary">></span></router-link>
+        <div class="mb-5 mt-10 flex justify-center">
+          <router-link to="/contact"
+            class="button">
+            Contactez-moi <span class="">&gt;</span>
+          </router-link>
         </div>
-    
         <div class="my-3">
           <div class="flex flex-row gap-5 justify-end">
             <a href="https://www.linkedin.com/in/alicederouillon/" target="_blank">
-              <i class="fab fa-linkedin-in text-primary transition-all hover:text-primaryhover text-4xl h-10 w-10 cursor-pointer"></i>
+              <i
+                class="fab fa-linkedin-in text-primary transition-all hover:text-primaryhover text-4xl h-10 w-10 cursor-pointer"></i>
             </a>
             <a href="https://github.com/DerouillonAlice" target="_blank">
-              <i class="fab fa-github text-primary transition-all hover:text-primaryhover text-4xl h-30 w-30 cursor-pointer"></i>
+              <i
+                class="fab fa-github text-primary transition-all hover:text-primaryhover text-4xl h-30 w-30 cursor-pointer"></i>
             </a>
           </div>
         </div>
@@ -85,7 +89,7 @@ export default {
 .sidebar {
   margin: 20px 0px 20px 20px;
   border-radius: 20px;
-  height:calc(100% - 2.5rem);
+  height: calc(100% - 2.5rem);
   color: #fff;
   padding: 20px;
   text-align: center;
@@ -99,7 +103,7 @@ export default {
 @media screen and (max-width: 1024px) {
   .sidebar {
     height: auto;
-    margin: 20px 20px 20px 20px;
+    margin: 20px 20px 0px 20px;
     grid-column: span 12;
     padding: 20px 20px 0px 20px;
   }
@@ -113,11 +117,11 @@ export default {
   }
 
   .contact-info-container.block {
-    display: block; 
+    display: block;
   }
 
   .profile {
-    width: 1/3 !important; 
+    width: 1/3 !important;
   }
 }
 </style>

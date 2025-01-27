@@ -1,5 +1,5 @@
 <template>
-  <footer class="bg-background text-white py-2 text-center bottom-0 mt-5">
+  <footer class="bg-background text-white text-center bottom-0 pt-2 mt-2">
     <p>&copy; {{ currentYear }} Alice Derouillon. Tous droits réservés.</p>
   </footer>
 </template>

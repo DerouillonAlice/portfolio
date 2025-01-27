@@ -1,12 +1,12 @@
 <template>
-  <div :class="['w-screen','min-h-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor, 'transition-background']">
+  <div :class="['w-screen','min-h-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor, 'transition-background', 'overflow-x-hidden']">
     <Sidebar class="bg-background text-white custom-height" />
     <div class="content overflow-auto custom-height rounded-lg m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
       <Navbar />
       <div class="flex-grow">
         <router-view />
       </div>
-      <Footer /> <!-- Add Footer component here -->
+      <Footer /> 
     </div>
   </div>
 </template>
@@ -77,25 +77,6 @@ export default {
   min-height: 100vh;
 }
 
-.bg-blue-500 {
-  background-color: #2d89ef;
-}
-
-.bg-purple-500 {
-  background-color: #800080;
-}
-
-.bg-green-500 {
-  background-color: #00a300;
-}
-
-.bg-red-500 {
-  background-color: #e51400;
-}
-
-.bg-gray-800 {
-  background-color: #333;
-}
 
 .rounded-lg {
   border-radius: 20px;
