@@ -6,7 +6,6 @@
           class="profile object-cover aspect-square w-1/3 h-auto lg:w-2/3 rounded-lg lg:aspect-auto mx-auto mb-0 lg:mb-5" />
         <div class="info lg:w-full px-5 sm:px-20 lg:px-0 my-auto lg:my-3">
           <h2 class="text-2xl font-bold">Alice Derouillon</h2>
-          <h3>Développeuse Web</h3>
           <hr class="border-gray-300 my-4 w-2/3 mx-auto" />
         </div>
       </div>
@@ -31,7 +30,7 @@
             </div>
             <div class="text-left">
               <p class="text-secondary text-sm">EMAIL</p>
-              <p><a class="underline" href="mailto:contact@alicedr.com">contact@alicedr.com</a></p>
+              <p><a class="font-bold hover:text-primary" href="mailto:contact@alicedr.com">contact@alicedr.com</a></p>
             </div>
           </li>
           <li class="flex flex-row justify-start gap-5">
@@ -40,7 +39,7 @@
             </div>
             <div class="text-left">
               <p class="text-secondary text-sm">TEL.</p>
-              <p><a class="underline" href="tel:+33780981337">07 80 98 13 37</a></p>
+              <p><a class="font-bold hover:text-primary" href="tel:+33780981337">07 80 98 13 37</a></p>
             </div>
           </li>
         </ul>

@@ -270,8 +270,8 @@
       "UX/UI Design",
       "Glassmorphism"
     ],
-    "link": "https://weatherapp.alice.sh",
-    "imageUrl": "img/weatherapp.png",
+    "link": "https://mmi23g05.sae401.ovh/",
+    "imageUrl": "img/weather_app.png",
     "context": "Projet fullstack avec Symfony (API REST sécurisée via JWT) et Vue.js. Design inspiré du glassmorphism et du bento UI.",
     "achievements": [
       "API REST Symfony sécurisée avec JWT",
