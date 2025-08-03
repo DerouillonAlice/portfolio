@@ -2,75 +2,511 @@
   {
     "id": 1,
     "title": "La Ferme de Fontenay",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["Themosis", "SCSS", "TailwindCSS"],
-    "link": "https://fermedefontenay.ze-truc.fr",
+    "description": "Refonte complète du site de la Ferme de Fontenay, une exploitation agricole locale souhaitant moderniser sa présence en ligne. Le projet a été mené avec le framework Themosis sous WordPress.",
+    "type": "Projet en entreprise",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "Wordpress",
+      "Themosis",
+      "SCSS",
+      "TailwindCSS"
+    ],
+    "link": "https://www.fermedefontenay.fr/",
     "imageUrl": "img/fermefontenay.png",
-    "detailedDescription": "Description détaillée du projet La Ferme de Fontenay..."
+    "context": "Refonte complète du site de la Ferme de Fontenay, une exploitation agricole locale souhaitant moderniser sa présence en ligne. Le projet a été mené avec le framework Themosis.",
+    "achievements": [
+      "Mise en place du back-end Wordpress",
+      "Développement d'un thème sur mesure avec gestion des contenus dynamiques",
+      "Intégration des pages",
+      "Responsive design et optimisation des performances"
+    ]
   },
   {
     "id": 2,
     "title": "A'Keep",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["PHP", "TailwindCSS"],
+    "description": "Premier projet web personnel visant à créer une application PHP native pour créer, classer et partager des notes collaboratives.",
+    "type": "Projet personnel",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "PHP",
+      "TailwindCSS"
+    ],
+    "stack": "PHP, Tailwind CSS, HTML",
     "link": "https://notes.alicedr.com",
     "imageUrl": "img/akeep.png",
-    "detailedDescription": "Description détaillée du projet A'Keep..."
+    "context": "Premier projet web personnel visant à créer une application PHP native pour créer, classer et partager des notes collaboratives.",
+    "achievements": [
+      "Architecture en PHP natif : gestion des routes, des vues et du stockage de données",
+      "Création de notes : formulaire HTML pour rédiger des notes, les modifier ou les supprimer",
+      "Partage de notes : partage entre les comptes utilisateurs",
+      "Interface responsive en Tailwind CSS : design minimaliste, clair, adapté aux mobiles"
+    ]
   },
   {
     "id": 3,
     "title": "3'Pousses - Site de co-jardinage",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["PHP", "TailwindCSS"],
+    "description": "Plateforme de co-jardinage locale développée en PHP natif.",
+    "type": "Projet scolaire",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "PHP",
+      "TailwindCSS"
+    ],
+    "stack": "PHP, Tailwind CSS, MySQL, HTML",
     "link": "https://mmi23g05.sae202.ovh/",
     "imageUrl": "img/sae202.png",
-    "detailedDescription": "Description détaillée du projet 3'Pousses..."
+    "context": "Projet académique visant à créer un site de mise en relation entre particuliers souhaitant partager des espaces verts. Le site propose des annonces de jardins, une messagerie et une cartographie des offres.",
+    "achievements": [
+      "Développement en PHP natif avec logique MVC simplifiée",
+      "Mise en place d'un système de messagerie entre utilisateurs",
+      "Formulaire d'ajout et de recherche d'annonces",
+      "Intégration responsive avec TailwindCSS"
+    ]
   },
   {
     "id": 4,
     "title": "Faunéa",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["VueJS", "TailwindCSS"],
+    "description": "Webdocumentaire éducatif sur les espèces menacées avec carte interactive et quizz.",
+    "type": "Projet scolaire",
+    "categories": [
+      "Développement web",
+      "Graphisme"
+    ],
+    "tags": [
+      "VueJS",
+      "TailwindCSS"
+    ],
+    "stack": "Vue.js, Leaflet, HTML/CSS, Figma, Illustrator",
     "link": "https://faunea.alice.sh",
     "imageUrl": "img/faunea.png",
-    "detailedDescription": "Description détaillée du projet Faunéa..."
+    "context": "Projet de webdocumentaire dans le cadre d'un exercice scolaire autour du thème des « Invisibles ». J'ai choisi de traiter les animaux menacés d'extinction, à travers un site éducatif et interactif, pensé pour un jeune public.",
+    "achievements": [
+      "UI adaptée aux enfants : maquette sur Figma avec couleurs douces, pictos, navigation intuitive, logo",
+      "Carte interactive avec Leaflet : Affichage d'espèces menacées cliquables pour afficher leur fiche",
+      "Quizz dynamique : questions générées, feedback instantané et score final",
+      "Composants Vue.js réutilisables pour les fiches, cartes et quizz"
+    ]
   },
   {
     "id": 5,
     "title": "MealFlow",
-    "description": "MealFlow - Application de Planification de Repas Intelligente",
-    "tags": ["VueJS", "TailwindCSS"],
+    "description": "Application de Planification de Repas Intelligente",
+    "type": "Projet personnel",
+    "categories": [
+      "Graphisme",
+      "UX/UI Design"
+    ],
+    "tags": [
+      "VueJS",
+      "TailwindCSS"
+    ],
+    "stack": "Vue.js, TailwindCSS, Figma",
+    "skills": [
+      "UX/UI Design",
+      "Wireframing",
+      "Conception d'application",
+      "Identité visuelle"
+    ],
     "link": "#",
     "imageUrl": "img/mealflow.png",
-    "detailedDescription": "MealFlow est une application innovante conçue pour aider les utilisateurs à planifier leurs repas de manière simple, tout en s'adaptant à leur emploi du temps, leur niveau d'activité physique et le matériel de cuisine disponible. L'objectif est d'offrir une expérience de planification flexible, permettant aux utilisateurs de choisir des recettes adaptées à leur temps, leurs préférences alimentaires et leurs besoins énergétiques.\n\nPour le moment, j'ai réalisé le logo de MealFlow et je suis en train de préparer les maquettes grâce aux réflexions et wireframes que j'ai réalisés avec mon coéquipier. Ce travail de conception est basé sur des sessions de brainstorming approfondies, afin de garantir une expérience utilisateur intuitive et fluide. Les wireframes et les éléments de design serviront de base pour une interface fonctionnelle et visuellement engageante.\n\nRestez à l'écoute pour la suite du développement de l'application !",
+    "context": "MealFlow est une application innovante conçue pour aider les utilisateurs à planifier leurs repas de manière simple, tout en s'adaptant à leur emploi du temps, leur niveau d'activité physique et le matériel de cuisine disponible.",
+    "achievements": [
+      "Création du logo et de l'identité visuelle",
+      "Réalisation de wireframes et maquettes",
+      "Sessions de brainstorming pour l'expérience utilisateur",
+      "Conception d'une interface intuitive et fluide"
+    ],
     "inProgress": true,
-    "additionalImages": ["/img/logo_mealflow.png", "/img/maquettes.png"]
+    "additionalImages": [
+      "/img/logo_mealflow.png",
+      "/img/maquettes.png"
+    ]
   },
   {
     "id": 6,
     "title": "Parc du Marais",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["SCSS"],
+    "description": "Mini-site interactif sur la faune d'un parc naturel régional.",
+    "type": "Projet scolaire",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "SCSS"
+    ],
+    "stack": "HTML, SCSS, JS",
+    "skills": [
+      "Intégration web",
+      "SCSS",
+      "Accessibilité",
+      "Responsive design"
+    ],
     "link": "http://mmi23g08.sae301dev.ovh",
     "imageUrl": "img/parc.png",
-    "detailedDescription": "Description détaillée du projet Parc du Marais..."
+    "context": "Site de présentation du Parc du Marais avec carte interactive, accès mobile et fiches faune/flore. Projet de design pédagogique et technique axé accessibilité.",
+    "achievements": [
+      "Intégration complète à partir de maquette",
+      "Navigation accessible (ARIA, contraste, tabulation)",
+      "Pages animées avec transitions douces",
+      "Responsive design pour tablettes et mobiles"
+    ]
   },
   {
     "id": 7,
     "title": "A'Danse",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["TailwindCSS"],
+    "description": "Site vitrine responsive pour une école de danse locale.",
+    "type": "Projet personnel",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "TailwindCSS"
+    ],
+    "stack": "HTML, TailwindCSS, JavaScript",
+    "skills": [
+      "Intégration TailwindCSS",
+      "UX mobile",
+      "SEO",
+      "Responsive design"
+    ],
     "link": "https://danse.alicedr.com",
     "imageUrl": "img/adanse.png",
-    "detailedDescription": "Description détaillée du projet A'Danse..."
+    "context": "Réalisation du site d'une association de danse locale afin de mettre en avant les cours et les professeurs. Projet réalisé en autonomie.",
+    "achievements": [
+      "Intégration de la maquette Figma avec TailwindCSS",
+      "Création de composants réutilisables (programme, planning, contact)",
+      "Responsive design et animations au scroll",
+      "SEO de base (balises, titres, meta)"
+    ]
   },
   {
     "id": 8,
     "title": "Site de recherche de lieux touristiques",
-    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
-    "tags": ["PHP", "TailwindCSS"],
+    "description": "Application web de recherche de lieux touristiques avec carte interactive.",
+    "type": "Projet scolaire",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "PHP",
+      "TailwindCSS"
+    ],
+    "stack": "PHP, HTML/CSS, Leaflet, JavaScript",
+    "skills": [
+      "PHP",
+      "Requêtes SQL",
+      "Affichage dynamique",
+      "Cartographie",
+      "Base de données"
+    ],
     "link": "https://mmi23g05.sae203.ovh/",
     "imageUrl": "img/sae203.png",
-    "detailedDescription": "Description détaillée du projet de recherche de lieux touristiques..."
+    "context": "Conception d'un site permettant de rechercher des lieux touristiques par région avec affichage sur une carte. Projet orienté découverte d'API JS et gestion dynamique des données.",
+    "achievements": [
+      "Requêtes dynamiques et filtres de recherche par catégorie et localisation",
+      "Affichage des résultats sur une carte Leaflet",
+      "Interface simple et responsive",
+      "Création d'une base de données MySQL avec back-office basique"
+    ]
+  },
+  {
+    "id": 9,
+    "title": "Aub'Clean",
+    "description": "Site vitrine professionnel pour une entreprise locale de nettoyage.",
+    "type": "Projet en entreprise",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "Themosis",
+      "SCSS",
+      "TailwindCSS",
+      "Wordpress"
+    ],
+    "stack": "WordPress, Themosis (basé sur Laravel), TailwindCSS, SCSS",
+    "skills": [
+      "Développement WordPress",
+      "Framework Themosis",
+      "Optimisation SEO",
+      "Responsive design"
+    ],
+    "link": "https://aubclean.ze-truc.fr",
+    "imageUrl": "img/aubclean.png",
+    "context": "Création du site vitrine de l'entreprise Aub'Clean via le framework Themosis.",
+    "achievements": [
+      "Installation de WordPress avec un thème sur mesure",
+      "Intégration d'un back-office simple à prendre en main",
+      "Développement responsive avec TailwindCSS",
+      "Optimisation des performances pour le référencement naturel"
+    ]
+  },
+  {
+    "id": 10,
+    "title": "Weather App",
+    "description": "Application météo moderne avec dashboard personnalisable.",
+    "type": "Projet personnel",
+    "categories": [
+      "Développement web",
+      "Graphisme"
+    ],
+    "tags": [
+      "Symfony",
+      "Vuejs",
+      "TailwindCSS",
+      "Docker",
+      "Figma",
+      "UI/UX"
+    ],
+    "stack": "Symfony, Vue.js, TailwindCSS, Docker, OpenWeatherMap API",
+    "skills": [
+      "Développement fullstack",
+      "API REST",
+      "JWT",
+      "UX/UI Design",
+      "Glassmorphism"
+    ],
+    "link": "https://weatherapp.alice.sh",
+    "imageUrl": "img/weatherapp.png",
+    "context": "Projet fullstack avec Symfony (API REST sécurisée via JWT) et Vue.js. Design inspiré du glassmorphism et du bento UI.",
+    "achievements": [
+      "API REST Symfony sécurisée avec JWT",
+      "Interface Vue.js avec drag-and-drop (vue3-grid-layout)",
+      "Gestion des préférences utilisateur",
+      "Documentation Swagger complète",
+      "Design sur Figma avec glassmorphism et bento UI"
+    ]
+  },
+  {
+    "id": 11,
+    "title": "Portfolio Photo",
+    "description": "Site personnel pour présenter mes photographies.",
+    "type": "Projet personnel",
+    "categories": [
+      "Développement web",
+      "Photographie"
+    ],
+    "tags": [
+      "Wordpress",
+      "TailwindCSS",
+      "Sage",
+      "Figma",
+      "Photographie"
+    ],
+    "stack": "WordPress, Bedrock, Sage 11, Blade, TailwindCSS",
+    "skills": [
+      "WordPress moderne",
+      "Custom Post Types",
+      "Photographie",
+      "Post-traitement"
+    ],
+    "link": "https://photo.alicedr.com",
+    "imageUrl": "img/photography.png",
+    "context": "Site WordPress avec Bedrock + Sage 11, servant de portfolio photo personnel. Toutes les photos ont été prises et post-traitées par mes soins avec un Canon EOS R100.",
+    "achievements": [
+      "Thème utilisant Blade et TailwindCSS",
+      "Grille responsive adaptative",
+      "Custom Post Type et taxonomie personnalisée",
+      "Prise et post-traitement des photographies"
+    ]
+  },
+  {
+    "id": 12,
+    "title": "Onvazou",
+    "description": "Guides de voyage numériques pour jeunes adultes.",
+    "type": "Projet entrepreneurial",
+    "categories": [
+      "Développement web",
+      "Communication",
+      "Graphisme"
+    ],
+    "tags": [
+      "WooCommerce",
+      "Wordpress",
+      "Illustrator",
+      "Canva",
+      "UI/UX"
+    ],
+    "stack": "WordPress, WooCommerce, Illustrator, Canva, Notion",
+    "skills": [
+      "E-commerce",
+      "Marketing digital",
+      "Création de contenu",
+      "Stratégie social media"
+    ],
+    "link": "https://onvazou.alicedr.com",
+    "imageUrl": "img/onvazou.png",
+    "context": "Projet entrepreneurial : conception de guides de voyage PDF téléchargeables + templates Notion gratuits pour jeunes adultes.",
+    "achievements": [
+      "Boutique WooCommerce automatisée",
+      "Création de guides PDF et templates Notion",
+      "Stratégie marketing et e-commerce",
+      "Création de contenu pour Instagram/TikTok"
+    ]
+  },
+  {
+    "id": 13,
+    "title": "Starter Theme Sage + WooCommerce",
+    "description": "Base technique WordPress modernisée avec Sage 11.",
+    "type": "Projet professionnel",
+    "categories": [
+      "Développement web"
+    ],
+    "tags": [
+      "Wordpress",
+      "WooCommerce",
+      "Docker",
+      "TailwindCSS",
+      "UI/UX"
+    ],
+    "stack": "WordPress, Sage 11, Blade, TailwindCSS, Docker",
+    "skills": [
+      "Architecture WordPress moderne",
+      "Template réutilisable",
+      "Docker",
+      "Documentation"
+    ],
+    "link": "https://startertheme.alicedr.com",
+    "imageUrl": "img/template-sage.png",
+    "context": "Template interne créée pour remplacer un ancien starter theme obsolète et gagner du temps sur les futurs projets.",
+    "achievements": [
+      "Utilisation de Sage 11 (Blade, TailwindCSS)",
+      "Intégration WooCommerce via librairie GitHub",
+      "Template réutilisable et documenté",
+      "Configuration Docker pour développement"
+    ]
+  },
+  {
+    "id": 14,
+    "title": "Template Documentation Clients",
+    "description": "Système de documentation client clair et réutilisable.",
+    "type": "Projet professionnel",
+    "categories": [
+      "Développement web",
+      "UX/UI Design"
+    ],
+    "tags": [
+      "Nuxt",
+      "shadcn/ui",
+      "UI/UX"
+    ],
+    "stack": "Nuxt.js, shadcn/ui, Markdown, Netlify",
+    "skills": [
+      "Documentation technique",
+      "UX/UI",
+      "Architecture frontend",
+      "Nuxt.js"
+    ],
+    "link": "https://docu-template.alicedr.com",
+    "imageUrl": "img/template-doc.png",
+    "context": "Template Nuxt.js pour générer des documentations claires, accessibles et maintenables pour les clients.",
+    "achievements": [
+      "Intégration de shadcn/ui",
+      "Contenus éditables en Markdown",
+      "Design responsive et professionnel",
+      "Déploiement automatisé sur Netlify"
+    ]
+  },
+  {
+    "id": 15,
+    "title": "Workflow Audit SEO (n8n)",
+    "description": "Audit automatisé de sites web WordPress avec génération de rapports.",
+    "type": "Projet professionnel",
+    "categories": [
+      "Automatisation",
+      "Développement web"
+    ],
+    "tags": [
+      "n8n",
+      "Automatisation",
+      "JavaScript",
+      "UI/UX"
+    ],
+    "stack": "n8n, APIs PageSpeed et W3C, JavaScript, HTML",
+    "skills": [
+      "Automatisation",
+      "APIs",
+      "Génération de rapports",
+      "n8n",
+      "JavaScript"
+    ],
+    "link": "https://github.com/alicedr/audit-workflow",
+    "imageUrl": "img/audit-n8n.png",
+    "context": "Workflow complet pour auditer automatiquement un site web sans intervention manuelle. Utilisé en interne pour les sites vitrine de l'agence.",
+    "achievements": [
+      "Audit automatisé (balises HTML, accessibilité mobile, robots.txt, favicon)",
+      "Requêtes aux APIs PageSpeed et W3C",
+      "Génération d'un rapport HTML responsive",
+      "Synthèse des résultats automatique"
+    ]
+  },
+  {
+    "id": 16,
+    "title": "Automatisation Autorisation à l'image",
+    "description": "Génération automatique de PDF à partir de Typeform.",
+    "type": "Projet professionnel",
+    "categories": [
+      "Automatisation"
+    ],
+    "tags": [
+      "Google Apps Script",
+      "No-code",
+      "Automatisation",
+      "HTML/CSS"
+    ],
+    "stack": "Google Apps Script, Typeform, Google Drive, Gmail",
+    "skills": [
+      "Automatisation",
+      "No-code",
+      "Génération PDF",
+      "Google Apps Script"
+    ],
+    "link": "https://github.com/alicedr/autorisation-image",
+    "imageUrl": "img/autorisation.png",
+    "context": "Script pour automatiser la génération d'autorisations à l'image lors de tournages ou reportages.",
+    "achievements": [
+      "Script Google Apps Script relié à Typeform",
+      "Génération PDF personnalisé automatique",
+      "Envoi automatique par mail",
+      "Archivage automatique sur Google Drive"
+    ]
+  },
+  {
+    "id": 17,
+    "title": "Newsletters & Emailing",
+    "description": "Intégration de newsletters et emailing en HTML/CSS inline (responsive, compatible Outlook/Gmail).",
+    "type": "Projets professionnels",
+    "categories": [
+      "Développement web",
+      "Communication"
+    ],
+    "tags": [
+      "HTML/CSS",
+      "Emailing",
+      "UI/UX",
+      "Brevo",
+      "Mailchimp"
+    ],
+    "stack": "HTML/CSS pour emails, Mailchimp, Brevo (Sendinblue)",
+    "skills": [
+      "HTML/CSS emails",
+      "Tests multi-clients",
+      "Automatisations marketing",
+      "Suivi des performances"
+    ],
+    "link": "#",
+    "imageUrl": "img/emailing.png",
+    "context": "Dans le cadre de missions professionnelles, création et automatisation de l'envoi de newsletters et emails transactionnels.",
+    "achievements": [
+      "Développement de templates email en HTML/CSS responsive",
+      "Tests sur les principaux clients mails (Outlook, Gmail, mobile, Apple Mail)",
+      "Automatisation des campagnes (bienvenue, relance, panier abandonné)",
+      "Suivi des performances (taux d'ouverture, de clic, d'engagement)",
+      "Ajustements des templates selon les retours"
+    ]
   }
 ]

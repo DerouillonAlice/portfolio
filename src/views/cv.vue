@@ -24,6 +24,7 @@
                   <div class="flex gap-2 mt-2">
                     <!-- Icons for languages -->
                     <i class="devicon-symfony-plain   bg-background2 p-3 text-2xl rounded-md"></i>
+                    <i class="devicon-vuejs-plain colored   bg-background2 p-3 text-2xl rounded-md"></i>
                     <i class="devicon-sass-plain colored  bg-background2 p-3 text-2xl rounded-md"></i>
                     <i class="devicon-javascript-plain colored  bg-background2 p-3 text-2xl rounded-md"></i>
                   </div>
@@ -65,13 +66,16 @@
               <div class="flex items-start gap-4">
                 <div class="w-4 h-4 aspect-square bg-primary rounded-full mt-2"></div>
                 <div>
-                  <h4 class="text-lg text-white font-bold">Agence de communication Zetruc</h4>
+                  <h4 class="text-lg text-white font-bold">Agence de communication Zetruc - Troyes</h4>
                   <p class="text-secondary">Sept. 2024 - Sept. 2026</p>
-                  <p class="mt-2">Développement de sites web pour des clients locaux.</p>
+                  <p class="mt-2">Développeuse web en alternance chez Zetruc, j’ai réalisé des sites WordPress avec des thèmes sur mesure (framework Themosis), contribué à des projets e-commerce sous PrestaShop, intégré des newsletters (Brevo, Mailchimp) et automatisé certaines tâches avec n8n.</p>
                   <div class="flex gap-2 mt-2">
                     <i class="devicon-wordpress-plain bg-background2 p-3 text-2xl rounded-md"></i>
                     <i class="devicon-tailwindcss-plain colored bg-background2 p-3 text-2xl rounded-md"></i>
                     <i class="devicon-sass-plain colored bg-background2 p-3 text-2xl rounded-md"></i>
+                    <i class="devicon-docker-plain colored bg-background2 p-3 text-2xl rounded-md"></i>
+                    <i class="devicon-bitbucket-plain colored bg-background2 p-3 text-2xl rounded-md"></i>
+
                   </div>
                 </div>
               </div>
@@ -80,7 +84,7 @@
                 <div>
                   <h4 class="text-lg text-white font-bold">Kinougarde - Babysitting</h4>
                   <p class="text-secondary">Sept. 2021 - Fev. 2023</p>
-                  <p class="mt-2">Participation au développement d'une application mobile.</p>
+                  <p class="mt-2">Job étudiant de babysitting chez Kinougarde : accompagnement d’enfants en sortie d’école, aide aux devoirs, jeux...</p>
                 </div>
               </div>
               <div class="mt-3 flex justify-center md:justify-end md:mt-8">

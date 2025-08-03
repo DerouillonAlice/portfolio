@@ -6,8 +6,8 @@
       </div>
 
     <div class="flex flex-wrap">
-      <button class="px-4 mr-2 mb-2 rounded text-secondary hover:text-primary" @click="filterAll">Tout</button>
-      <button v-for="lang in uniqueLanguages" :key="lang" class="px-4 py-2 mr-2 mb-2 rounded text-secondary hover:text-primary" @click="filterByLanguage(lang)">{{ lang }}</button>
+      <button :class="{'bg-primary text-white font-bold': selectedCategory === 'Tout', 'text-secondary hover:text-primary': selectedCategory !== 'Tout'}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterAll">Tout</button>
+      <button v-for="category in uniqueCategories" :key="category" :class="{'bg-primary text-white font-bold': selectedCategory === category, 'text-secondary hover:text-primary': selectedCategory !== category}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterByCategory(category)">{{ category }}</button>
     </div>
 
     <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -16,8 +16,8 @@
           <img :src="project.imageUrl" alt="Image du projet" class="w-full h-36 object-cover mb-2">
           <h3 class="text-xl text-white font-bold">{{ project.title }}</h3>
           <div class="flex space-x-1">
-            <span v-for="(tag, index) in project.tags" :key="tag" class="text-secondary px-1 py-1 rounded">
-              {{ tag }}<span v-if="index < project.tags.length - 1" class="mx-1">|</span>
+            <span v-for="(category, index) in project.categories" :key="category" class="text-secondary px-1 py-1 rounded">
+              {{ category }}<span v-if="index < project.categories.length - 1" class="mx-1">|</span>
             </span>
           </div>
         </router-link>
@@ -36,21 +36,21 @@ import projectsData from '@/data/projects.json';
 export default {
   data() {
     return {
-      projects: projectsData,
-      selectedLanguage: 'Tout',
+      projects: projectsData.sort((a, b) => b.id - a.id),
+      selectedCategory: 'Tout',
       currentPage: 1,
       itemsPerPage: 6
     }
   },
   computed: {
-    uniqueLanguages() {
-      return [...new Set(this.projects.flatMap(project => project.tags))];
+    uniqueCategories() {
+      return [...new Set(this.projects.flatMap(project => project.categories))];
     },
     filteredProjects() {
-      if (this.selectedLanguage === 'Tout') {
+      if (this.selectedCategory === 'Tout') {
         return this.projects;
       } else {
-        return this.projects.filter(project => project.tags.includes(this.selectedLanguage));
+        return this.projects.filter(project => project.categories.includes(this.selectedCategory));
       }
     },
     paginatedProjects() {
@@ -63,12 +63,12 @@ export default {
     }
   },
   methods: {
-    filterByLanguage(lang) {
-      this.selectedLanguage = lang;
+    filterByCategory(category) {
+      this.selectedCategory = category;
       this.currentPage = 1;
     },
     filterAll() {
-      this.selectedLanguage = 'Tout';
+      this.selectedCategory = 'Tout';
       this.currentPage = 1;
     },
     goToPage(page) {
