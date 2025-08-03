@@ -1,0 +1,76 @@
+[
+  {
+    "id": 1,
+    "title": "La Ferme de Fontenay",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["Themosis", "SCSS", "TailwindCSS"],
+    "link": "https://fermedefontenay.ze-truc.fr",
+    "imageUrl": "img/fermefontenay.png",
+    "detailedDescription": "Description détaillée du projet La Ferme de Fontenay..."
+  },
+  {
+    "id": 2,
+    "title": "A'Keep",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["PHP", "TailwindCSS"],
+    "link": "https://notes.alicedr.com",
+    "imageUrl": "img/akeep.png",
+    "detailedDescription": "Description détaillée du projet A'Keep..."
+  },
+  {
+    "id": 3,
+    "title": "3'Pousses - Site de co-jardinage",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["PHP", "TailwindCSS"],
+    "link": "https://mmi23g05.sae202.ovh/",
+    "imageUrl": "img/sae202.png",
+    "detailedDescription": "Description détaillée du projet 3'Pousses..."
+  },
+  {
+    "id": 4,
+    "title": "Faunéa",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["VueJS", "TailwindCSS"],
+    "link": "https://faunea.alice.sh",
+    "imageUrl": "img/faunea.png",
+    "detailedDescription": "Description détaillée du projet Faunéa..."
+  },
+  {
+    "id": 5,
+    "title": "MealFlow",
+    "description": "MealFlow - Application de Planification de Repas Intelligente",
+    "tags": ["VueJS", "TailwindCSS"],
+    "link": "#",
+    "imageUrl": "img/mealflow.png",
+    "detailedDescription": "MealFlow est une application innovante conçue pour aider les utilisateurs à planifier leurs repas de manière simple, tout en s'adaptant à leur emploi du temps, leur niveau d'activité physique et le matériel de cuisine disponible. L'objectif est d'offrir une expérience de planification flexible, permettant aux utilisateurs de choisir des recettes adaptées à leur temps, leurs préférences alimentaires et leurs besoins énergétiques.\n\nPour le moment, j'ai réalisé le logo de MealFlow et je suis en train de préparer les maquettes grâce aux réflexions et wireframes que j'ai réalisés avec mon coéquipier. Ce travail de conception est basé sur des sessions de brainstorming approfondies, afin de garantir une expérience utilisateur intuitive et fluide. Les wireframes et les éléments de design serviront de base pour une interface fonctionnelle et visuellement engageante.\n\nRestez à l'écoute pour la suite du développement de l'application !",
+    "inProgress": true,
+    "additionalImages": ["/img/logo_mealflow.png", "/img/maquettes.png"]
+  },
+  {
+    "id": 6,
+    "title": "Parc du Marais",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["SCSS"],
+    "link": "http://mmi23g08.sae301dev.ovh",
+    "imageUrl": "img/parc.png",
+    "detailedDescription": "Description détaillée du projet Parc du Marais..."
+  },
+  {
+    "id": 7,
+    "title": "A'Danse",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["TailwindCSS"],
+    "link": "https://danse.alicedr.com",
+    "imageUrl": "img/adanse.png",
+    "detailedDescription": "Description détaillée du projet A'Danse..."
+  },
+  {
+    "id": 8,
+    "title": "Site de recherche de lieux touristiques",
+    "description": "Faire un truc qui dérange n'est pas impoli, c'est une stratégie.",
+    "tags": ["PHP", "TailwindCSS"],
+    "link": "https://mmi23g05.sae203.ovh/",
+    "imageUrl": "img/sae203.png",
+    "detailedDescription": "Description détaillée du projet de recherche de lieux touristiques..."
+  }
+]

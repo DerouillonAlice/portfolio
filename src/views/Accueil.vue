@@ -18,7 +18,7 @@
 
     <div>
       <div class="relative mb-8">
-        <h2 class=" text-xl lg:text-2xl font-bold text-white no-underline">Compétances</h2>
+        <h2 class=" text-xl lg:text-2xl font-bold text-white no-underline">Compétences</h2>
         <div class="absolute -bottom-3 left-0 right-0 h-2 w-20 bg-primary rounded-full"></div>
       </div>
       <div class="mb-8 max-w-screen-md mx-auto px-4">
