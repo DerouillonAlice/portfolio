@@ -1,12 +1,14 @@
 <template>
-  <div :class="['w-screen','min-h-screen', 'grid', 'grid-cols-12', 'mx-auto', 'gap-0', activeColor, 'transition-background', 'overflow-x-hidden']">
-    <Sidebar class="bg-background text-white custom-height" />
-    <div class="content overflow-auto custom-height rounded-lg m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
-      <Navbar />
-      <div class="flex-grow">
-        <router-view />
+  <div :class="['w-screen','min-h-screen', 'flex', 'justify-center', activeColor, 'transition-background', 'overflow-x-hidden']">
+    <div class="grid grid-cols-12 gap-0 w-full max-w-[1536px]">
+      <Sidebar class="bg-background text-white custom-height" />
+      <div class="content  overflow-auto custom-height rounded-lg m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
+        <Navbar />
+        <div class="flex-grow">
+          <router-view />
+        </div>
+        <Footer /> 
       </div>
-      <Footer /> 
     </div>
   </div>
 </template>
