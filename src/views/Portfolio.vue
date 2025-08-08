@@ -14,10 +14,10 @@
       <div v-if="paginatedProjects.length > 0" v-for="project in paginatedProjects" :key="project.id" class="p-2 rounded-lg transform transition-transform hover:scale-110 relative">
         <router-link :to="`/portfolio/${project.id}`" class="block">
           <img :src="project.imageUrl" alt="Image du projet" class="w-full h-36 object-cover mb-2">
-          <h3 class="text-xl text-white font-bold">{{ project.title }}</h3>
-          <div class="flex space-x-1">
-            <span v-for="(category, index) in project.categories" :key="category" class="text-secondary px-1 py-1 rounded">
-              {{ category }}<span v-if="index < project.categories.length - 1" class="mx-1">|</span>
+          <h3 class="text-xl text-white font-bold truncate">{{ project.title }}</h3>
+          <div class="flex space-x-1 text-sm whitespace-nowrap overflow-hidden">
+            <span v-for="(tag, index) in project.tags.slice(0, 3)" :key="tag" class="text-secondary px-1 py-1 rounded">
+              {{ tag }}<span v-if="index < Math.min(project.tags.length, 3) - 1" class="mx-1">|</span>
             </span>
           </div>
         </router-link>
