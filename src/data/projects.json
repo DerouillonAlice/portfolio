@@ -371,7 +371,7 @@
       "Documentation"
     ],
     "link": "https://startertheme.alicedr.com",
-    "imageUrl": "img/template-sage.png",
+    "imageUrl": "img/woocommerce.webp",
     "context": "Template interne créée pour remplacer un ancien starter theme obsolète et gagner du temps sur les futurs projets.",
     "achievements": [
       "Utilisation de Sage 11 (Blade, TailwindCSS)",
@@ -402,7 +402,7 @@
       "Nuxt.js"
     ],
     "link": "https://docu-template.alicedr.com",
-    "imageUrl": "img/template-doc.png",
+    "imageUrl": "img/documentation.png",
     "context": "Template Nuxt.js pour générer des documentations claires, accessibles et maintenables pour les clients.",
     "achievements": [
       "Intégration de shadcn/ui",
@@ -435,7 +435,7 @@
       "JavaScript"
     ],
     "link": "https://github.com/alicedr/audit-workflow",
-    "imageUrl": "img/audit-n8n.png",
+    "imageUrl": "img/n8n.png",
     "context": "Workflow complet pour auditer automatiquement un site web sans intervention manuelle. Utilisé en interne pour les sites vitrine de l'agence.",
     "achievements": [
       "Audit automatisé (balises HTML, accessibilité mobile, robots.txt, favicon)",
@@ -466,7 +466,7 @@
       "Google Apps Script"
     ],
     "link": "https://github.com/alicedr/autorisation-image",
-    "imageUrl": "img/autorisation.png",
+    "imageUrl": "img/appscript.png",
     "context": "Script pour automatiser la génération d'autorisations à l'image lors de tournages ou reportages.",
     "achievements": [
       "Script Google Apps Script relié à Typeform",
