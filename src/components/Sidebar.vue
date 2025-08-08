@@ -1,5 +1,5 @@
 <template>
-  <aside class="flex flex-col justify-center h-auto lg:h-full p-5 text-center overflow-y-auto w-full">
+  <aside class="flex flex-col justify-center h-auto  p-5 text-center overflow-y-auto w-full">
     <div class="h-full flex flex-col justify-start">
       <!-- Layout responsive : row sur mobile, col sur desktop -->
       <div class="flex flex-row lg:flex-col mb-5">

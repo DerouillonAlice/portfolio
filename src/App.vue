@@ -15,33 +15,36 @@
 
 <template>
   <div :class="['w-screen', 'h-screen', activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
-    <div class="grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 h-full overflow-hidden">
-      
-      <div class="relative">
-        <Sidebar class="lg:fixed lg:top-5 lg:left-5 lg:bottom-5 lg:w-80 bg-background text-white rounded-2xl scrollbar-hide" />
-      </div>
-      
-      <div class="flex justify-center">
-        <div class="w-full max-w-[1536px]">
-          <div class="content rounded-2xl bg-background flex flex-col h-full">
-            <!-- Navbar fixe -->
-            <div class="flex-shrink-0 p-6 xs:p-12 pb-0">
-              <Navbar />
-            </div>
-            
-            <!-- Zone de contenu scrollable -->
-            <div class="flex-1 overflow-y-auto  px-6 xs:px-12 pb-6 xs:pb-12">
-              <router-view />
-            </div>
-            
-            <!-- Footer fixe -->
-            <div class="flex-shrink-0 p-6 xs:p-12 pt-0">
-              <Footer />
+    <div class="flex justify-center h-full">
+      <div class="w-full max-w-[1856px] grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 h-full">
+        
+        <!-- Container pour sticky sans overflow-hidden -->
+        <div class="overflow-y-auto scrollbar-hide">
+          <Sidebar class="lg:sticky lg:top-5 lg:w-80 lg:h-[calc(100vh-2.5rem)] bg-background text-white rounded-2xl scrollbar-hide" />
+        </div>
+        
+        <div class="flex justify-center overflow-y-auto scrollbar-hide">
+          <div class="w-full max-w-[1536px]">
+            <div class="content rounded-2xl bg-background flex flex-col min-h-full">
+              <!-- Navbar fixe -->
+              <div class="flex-shrink-0 p-6 xs:p-12 pb-0">
+                <Navbar />
+              </div>
+              
+              <!-- Zone de contenu scrollable -->
+              <div class="flex-1 px-6 xs:px-12 pb-6 xs:pb-12">
+                <router-view />
+              </div>
+              
+              <!-- Footer fixe -->
+              <div class="flex-shrink-0 p-6 xs:p-12 pt-0">
+                <Footer />
+              </div>
             </div>
           </div>
         </div>
+        
       </div>
-      
     </div>
   </div>
 </template>
