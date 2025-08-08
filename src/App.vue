@@ -1,8 +1,8 @@
-<template>
+<!-- <template>
   <div :class="['w-screen','min-h-screen', 'flex', 'justify-center', activeColor, 'transition-background', 'overflow-x-hidden']">
     <div class="grid grid-cols-12 gap-0 w-full max-w-[1536px]">
       <Sidebar class="bg-background text-white custom-height" />
-      <div class="content  overflow-auto custom-height rounded-lg m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
+      <div class="content  overflow-auto custom-height rounded-2xl m-5 col-span-12 lg:col-span-9 bg-background p-6 xs:p-12 flex flex-col">
         <Navbar />
         <div class="flex-grow">
           <router-view />
@@ -11,18 +11,42 @@
       </div>
     </div>
   </div>
+</template> -->
+
+<template>
+  <div :class="['min-h-screen', activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
+    <div class="grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 ">
+      
+      <div class="relative">
+        <Sidebar class="lg:fixed lg:top-5 lg:left-5 lg:bottom-5 lg:w-80 bg-background text-white rounded-2xl" />
+      </div>
+      
+      <div class="flex justify-center">
+        <div class="w-full max-w-[1536px]">
+          <div class="content overflow-auto min-h-full rounded-2xl bg-background p-6 xs:p-12 flex flex-col">
+            <Navbar />
+            <div class="flex-grow">
+              <router-view />
+            </div>
+            <Footer /> 
+          </div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
 </template>
 
 <script>
 import Sidebar from "@/components/Sidebar.vue";
 import Navbar from "@/components/Navbar.vue";
-import Footer from "@/components/Footer.vue"; // Import Footer component
+import Footer from "@/components/Footer.vue"; 
 
 export default {
   components: {
     Sidebar,
     Navbar,
-    Footer, // Register Footer component
+    Footer, 
   },
   computed: {
     activeColor() {
@@ -32,7 +56,7 @@ export default {
         portfolio: "dynamic-gradient-2",
         cv: "dynamic-gradient-3",
         contact: "dynamic-gradient-4",
-      }[routeName] || "dynamic-gradient-3"; // Valeur par défaut plus appropriée
+      }[routeName] || "dynamic-gradient-3"; 
     },
   },
 };
@@ -79,26 +103,6 @@ export default {
   min-height: 100vh;
 }
 
-
-.rounded-lg {
-  border-radius: 20px;
-}
-
-.m-5 {
-  margin: 20px;
-}
-
-.w-full {
-  width: 100vw;
-}
-
-.col-span-9 {
-  grid-column: span 9;
-}
-
-.bg-background {
-  background-color: #1e1d1d;
-}
 
 .transition-background {
   transition: background-color 0.5s ease, background-image 0.5s ease;

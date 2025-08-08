@@ -24,28 +24,28 @@
       </div>
       
       <!-- Slider DÉVELOPPEMENT WEB -->
-      <div class="mb-8 max-w-screen-md mx-auto px-4">
+      <div class="mb-8 max-w-xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">DÉVELOPPEMENT WEB</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 4,
-            gap: '1.5rem',
+            perPage: 3,
+            gap: '1rem',
             focus: 0,
             trimSpace: false,
             breakpoints: {
-              1024: { perPage: 3, gap: '1rem' },
-              768: { perPage: 2, gap: '0.75rem' },
-              640: { perPage: 1, gap: '0.5rem' }
+              1024: { perPage: 3, gap: '0.75rem' },
+              768: { perPage: 2, gap: '0.5rem' },
+              640: { perPage: 1, gap: '0.25rem' }
             },
             arrows: true,
             pagination: false
           }" class="max-w-full">
             <SplideSlide v-for="(icon, index) in devIcons" :key="index">
               <div
-                class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-36 h-36 mx-auto">
-                <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
-                <p class="mt-4 text-white font-medium text-sm text-center">{{ icon.label }}</p>
+                class="flex-shrink-0 bg-background2 p-4 rounded-lg flex flex-col justify-center items-center w-28 h-28 mx-auto">
+                <i :class="[icon.name, 'text-4xl', 'text-primary']"></i>
+                <p class="mt-2 text-white font-medium text-xs text-center">{{ icon.label }}</p>
               </div>
             </SplideSlide>
           </Splide>
@@ -53,28 +53,28 @@
       </div>
 
       <!-- Slider DESIGN & GRAPHISME -->
-      <div class="mb-8 max-w-screen-md mx-auto px-4">
+      <div class="mb-8 max-w-xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">DESIGN & GRAPHISME</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 4,
+            perPage: 3,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
             breakpoints: {
-              1024: { perPage: 3, gap: '1rem' },
-              768: { perPage: 2, gap: '0.75rem' },
-              640: { perPage: 1, gap: '0.5rem' }
+              1024: { perPage: 3, gap: '0.75rem' },
+              768: { perPage: 2, gap: '0.5rem' },
+              640: { perPage: 1, gap: '0.25rem' }
             },
             arrows: true,
             pagination: false
           }" class="max-w-full">
             <SplideSlide v-for="(icon, index) in designIcons" :key="index">
               <div
-                class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-36 h-36 mx-auto">
-                <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
-                <p class="mt-4 text-white font-medium text-sm text-center">{{ icon.label }}</p>
+                class="flex-shrink-0 bg-background2 p-4 rounded-lg flex flex-col justify-center items-center w-28 h-28 mx-auto">
+                <i :class="[icon.name, 'text-4xl', 'text-primary']"></i>
+                <p class="mt-2 text-white font-medium text-xs text-center">{{ icon.label }}</p>
               </div>
             </SplideSlide>
           </Splide>
@@ -82,28 +82,28 @@
       </div>
 
       <!-- Slider MARKETING & COMMUNICATION -->
-      <div class="mb-8 max-w-screen-md mx-auto px-4">
+      <div class="mb-8 max-w-xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">MARKETING & COMMUNICATION</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 4,
+            perPage: 3,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
             breakpoints: {
-              1024: { perPage: 3, gap: '1rem' },
-              768: { perPage: 2, gap: '0.75rem' },
-              640: { perPage: 1, gap: '0.5rem' }
+              1024: { perPage: 3, gap: '0.75rem' },
+              768: { perPage: 2, gap: '0.5rem' },
+              640: { perPage: 1, gap: '0.25rem' }
             },
             arrows: true,
             pagination: false
           }" class="max-w-full">
             <SplideSlide v-for="(icon, index) in marketingIcons" :key="index">
               <div
-                class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-36 h-36 mx-auto">
-                <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
-                <p class="mt-4 text-white font-medium text-sm text-center">{{ icon.label }}</p>
+                class="flex-shrink-0 bg-background2 p-4 rounded-lg flex flex-col justify-center items-center w-28 h-28 mx-auto">
+                <i :class="[icon.name, 'text-4xl', 'text-primary']"></i>
+                <p class="mt-2 text-white font-medium text-xs text-center">{{ icon.label }}</p>
               </div>
             </SplideSlide>
           </Splide>
@@ -111,28 +111,28 @@
       </div>
 
       <!-- Slider OUTILS & AUTOMATISATION -->
-      <div class="mb-8 max-w-screen-md mx-auto px-4">
+      <div class="mb-8 max-w-xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">OUTILS & AUTOMATISATION</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 4,
+            perPage: 3,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
             breakpoints: {
-              1024: { perPage: 3, gap: '1rem' },
-              768: { perPage: 2, gap: '0.75rem' },
-              640: { perPage: 1, gap: '0.5rem' }
+              1024: { perPage: 3, gap: '0.75rem' },
+              768: { perPage: 2, gap: '0.5rem' },
+              640: { perPage: 1, gap: '0.25rem' }
             },
             arrows: true,
             pagination: false
           }" class="max-w-full">
             <SplideSlide v-for="(icon, index) in toolsIcons" :key="index">
               <div
-                class="flex-shrink-0 bg-background2 p-6 rounded-lg flex flex-col justify-center items-center w-36 h-36 mx-auto">
-                <i :class="[icon.name, 'text-6xl', 'text-primary']"></i>
-                <p class="mt-4 text-white font-medium text-sm text-center">{{ icon.label }}</p>
+                class="flex-shrink-0 bg-background2 p-4 rounded-lg flex flex-col justify-center items-center w-28 h-28 mx-auto">
+                <i :class="[icon.name, 'text-4xl', 'text-primary']"></i>
+                <p class="mt-2 text-white font-medium text-xs text-center">{{ icon.label }}</p>
               </div>
             </SplideSlide>
           </Splide>
@@ -189,11 +189,9 @@ export default {
 @import '@splidejs/splide/dist/css/splide.min.css';
 
 .splide__arrow--prev {
-  left: -2.5rem;
+  left: -1.5rem;
 }
 .splide__arrow--next {
-  right: -2.5rem;
+  right: -1.5rem;
 }
-
-
 </style>
