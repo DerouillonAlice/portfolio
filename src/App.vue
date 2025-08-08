@@ -14,21 +14,30 @@
 </template> -->
 
 <template>
-  <div :class="['min-h-screen', activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
-    <div class="grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 ">
+  <div :class="['w-screen', 'h-screen', activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
+    <div class="grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 h-full overflow-hidden">
       
       <div class="relative">
-        <Sidebar class="lg:fixed lg:top-5 lg:left-5 lg:bottom-5 lg:w-80 bg-background text-white rounded-2xl" />
+        <Sidebar class="lg:fixed lg:top-5 lg:left-5 lg:bottom-5 lg:w-80 bg-background text-white rounded-2xl scrollbar-hide" />
       </div>
       
       <div class="flex justify-center">
         <div class="w-full max-w-[1536px]">
-          <div class="content overflow-auto min-h-full rounded-2xl bg-background p-6 xs:p-12 flex flex-col">
-            <Navbar />
-            <div class="flex-grow">
+          <div class="content rounded-2xl bg-background flex flex-col h-full">
+            <!-- Navbar fixe -->
+            <div class="flex-shrink-0 p-6 xs:p-12 pb-0">
+              <Navbar />
+            </div>
+            
+            <!-- Zone de contenu scrollable -->
+            <div class="flex-1 overflow-y-auto  px-6 xs:px-12 pb-6 xs:pb-12">
               <router-view />
             </div>
-            <Footer /> 
+            
+            <!-- Footer fixe -->
+            <div class="flex-shrink-0 p-6 xs:p-12 pt-0">
+              <Footer />
+            </div>
           </div>
         </div>
       </div>
@@ -63,6 +72,16 @@ export default {
 </script>
 
 <style scoped>
+/* Cache la scrollbar mais garde le scroll fonctionnel */
+.scrollbar-hide {
+  -ms-overflow-style: none;  /* IE et Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;  /* Chrome, Safari et Opera */
+}
+
 @keyframes gradientShift {
   0% {
     background-position: 0% 50%;
@@ -107,4 +126,6 @@ export default {
 .transition-background {
   transition: background-color 0.5s ease, background-image 0.5s ease;
 }
+
+
 </style>

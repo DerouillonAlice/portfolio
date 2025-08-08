@@ -24,12 +24,12 @@
       </div>
       
       <!-- Slider DÉVELOPPEMENT WEB -->
-      <div class="mb-8 max-w-xl mx-auto px-8">
+      <div class="mb-8 max-w-3xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">DÉVELOPPEMENT WEB</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 3,
+            perPage: 4,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
@@ -53,12 +53,12 @@
       </div>
 
       <!-- Slider DESIGN & GRAPHISME -->
-      <div class="mb-8 max-w-xl mx-auto px-8">
+      <div class="mb-8 max-w-3xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">DESIGN & GRAPHISME</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 3,
+            perPage: 4,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
@@ -82,12 +82,12 @@
       </div>
 
       <!-- Slider MARKETING & COMMUNICATION -->
-      <div class="mb-8 max-w-xl mx-auto px-8">
+      <div class="mb-8 max-w-3xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">MARKETING & COMMUNICATION</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 3,
+            perPage: 4,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
@@ -111,12 +111,12 @@
       </div>
 
       <!-- Slider OUTILS & AUTOMATISATION -->
-      <div class="mb-8 max-w-xl mx-auto px-8">
+      <div class="mb-8 max-w-3xl mx-auto px-8">
         <h3 class="text-md text-secondary mb-3 text-center">OUTILS & AUTOMATISATION</h3>
         <div class="relative flex justify-center">
           <Splide :options="{
             type: 'loop',
-            perPage: 3,
+            perPage: 4,
             gap: '1rem',
             focus: 0,
             trimSpace: false,
