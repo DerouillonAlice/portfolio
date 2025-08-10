@@ -1,6 +1,7 @@
 import Accueil from '@/views/Accueil.vue'
 import { createRouter, createWebHistory } from 'vue-router'
 // import HomeView from '../views/HomeView.vue'
+import Competences from '@/views/Competences.vue'
 
 const router = createRouter({
   history: createWebHistory(import.meta.env.BASE_URL),
@@ -31,6 +32,11 @@ const router = createRouter({
       path: '/portfolio/:id',
       name: 'ProjectDetail',
       component: () => import('@/views/ProjectDetail.vue')
+    },
+    {
+      path: '/competences',
+      name: 'Competences',
+      component: Competences
     }
   ],
 })
