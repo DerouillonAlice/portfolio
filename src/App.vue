@@ -14,12 +14,13 @@
 </template> -->
 
 <template>
-  <div :class="['w-screen', 'h-screen', activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
+  <div :class="[
+    activeColor, 'transition-background', 'overflow-x-hidden', 'p-5']">
     <div class="flex justify-center h-full">
       <div class="w-full max-w-[1856px] grid grid-rows-[auto_1fr] lg:grid-rows-1 lg:grid-cols-[320px_1fr] gap-5 h-full">
         
         <!-- Container pour sticky sans overflow-hidden -->
-        <div class="overflow-y-auto scrollbar-hide">
+        <div class="overflow-y-auto scrollbar-hide h-fit">
           <Sidebar class="lg:sticky lg:top-5 lg:w-80 lg:h-[calc(100vh-2.5rem)] bg-background text-white rounded-2xl scrollbar-hide" />
         </div>
         
