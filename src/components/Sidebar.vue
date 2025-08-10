@@ -52,13 +52,16 @@
         </div>
       </div>
       
-      <!-- Section du bas : Bouton et réseaux sociaux -->
-      <div :class="{ 'hidden': !isContactInfoVisible, 'block': isContactInfoVisible }"
-        class="lg:block">
-        <div class="mb-5 flex justify-center">
-          <router-link to="/contact" class="button">
+      <!-- Section du bas : Bouton, réseaux sociaux et téléchargement CV -->
+      <div :class="{ 'hidden': !isContactInfoVisible, 'block': isContactInfoVisible }" class="lg:block">
+        <div class="mb-5 flex flex-col items-center gap-3">
+          <router-link to="/contact" class="button w-full flex items-center justify-center gap-2">
             Contactez-moi <span class="">&gt;</span>
           </router-link>
+          <a href="/img/cv_Alice_Derouillon.pdf" download class="button w-full flex items-center justify-center gap-2 mt-2">
+            <i class="fas fa-download"></i>
+            Télécharger mon CV
+          </a>
         </div>
         <div class="my-3">
           <div class="flex flex-row gap-5 justify-end">
