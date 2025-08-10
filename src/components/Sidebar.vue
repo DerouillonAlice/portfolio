@@ -65,7 +65,8 @@
         }">
         <div class="mb-5 flex flex-col items-center gap-3">
           <router-link to="/contact" class="button w-full flex items-center justify-center gap-2">
-            Contactez-moi <span class="">&gt;</span>
+            <i class="fas fa-envelope"></i>
+            Contactez-moi 
           </router-link>
           <a href="/img/cv_Alice_Derouillon.pdf" download class="button w-full flex items-center justify-center gap-2 mt-2">
             <i class="fas fa-download"></i>
