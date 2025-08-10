@@ -1,7 +1,7 @@
 <template>
   <div class="container mx-auto text-white">
     <div class="relative mb-8 lg:pl-8">
-        <h1 class="h1">Portfolio</h1>
+        <h1 class="h1">Projets</h1>
         <div class="absolute -bottom-4 lg:left-10  h-2 w-36 bg-primary rounded-full"></div>
       </div>
 

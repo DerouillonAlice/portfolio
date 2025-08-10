@@ -14,7 +14,7 @@
       exact-active-class="text-primary"
       v-slot="{ isActive }"
     >
-      <span :class="{ 'text-primary': isActive }">Portfolio</span>
+      <span :class="{ 'text-primary': isActive }">Projets</span>
     </router-link>
     <router-link
       to="/cv"
