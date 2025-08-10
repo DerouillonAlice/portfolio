@@ -64,11 +64,31 @@ export default {
 };
 </script>
 
+
 <style scoped>
-/* Cache la scrollbar mais garde le scroll fonctionnel */
 .scrollbar-hide {
   -ms-overflow-style: none;  /* IE et Edge */
   scrollbar-width: none;  /* Firefox */
+}
+
+.scrollbar-hide,
+.scrollbar-hide * {
+  -ms-overflow-style: none !important;  /* IE et Edge */
+  scrollbar-width: none !important;  /* Firefox */
+}
+
+.scrollbar-hide::-webkit-scrollbar,
+.scrollbar-hide *::-webkit-scrollbar {
+  display: none !important;  /* Chrome, Safari et Opera */
+}
+
+*::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: transparent;
 }
 
 .scrollbar-hide::-webkit-scrollbar {
