@@ -1,6 +1,6 @@
 <template>
   <div class="container mx-auto text-white py-8">
-    <div v-if="project" class="max-w-4xl mx-auto">
+    <div v-if="project" class="max-w-4xl ">
       <!-- Back button -->
       <button @click="$router.go(-1)" class="mb-6 text-primary hover:text-secondary flex items-center">
         ← Retour au portfolio
