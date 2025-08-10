@@ -14,7 +14,7 @@
         
         <!-- Contenu principal -->
         <div class="lg:overflow-y-auto lg:scrollbar-hide lg:h-full">
-          <div class="w-full max-w-[1536px] mx-auto">
+          <div class="w-full max-w-[1536px] mx-auto h-full">
             <div class="content rounded-2xl bg-background flex flex-col min-h-full">
               <div class="flex-shrink-0 p-6 xs:p-12 pb-0">
                 <Navbar />
