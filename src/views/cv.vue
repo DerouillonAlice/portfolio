@@ -9,7 +9,7 @@
     </div>
 
     <!-- Grille qui prend toute la hauteur restante -->
-    <div class="flex-1 grid grid-cols-1 sm:grid-cols-2 gap-4 min-h-0">
+    <div class="flex-1 grid grid-cols-1 md:grid-cols-2 gap-4 min-h-0">
 
       <div class="p-2 rounded-lg flex flex-col">
         <div class="relative mb-10 flex-shrink-0">
