@@ -1,6 +1,6 @@
 <template>
   <footer class="bg-background text-white text-center bottom-0 pt-2 mt-2">
-    <p>&copy; {{ currentYear }} Alice Derouillon. Tous droits réservés.</p>
+    <p class="block sm:inline">&copy; {{ currentYear }} Alice Derouillon.<span class="block sm:inline"> Tous droits réservés.</span></p>
   </footer>
 </template>
 
