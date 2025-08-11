@@ -1,5 +1,5 @@
 <template>
-  <nav class="flex justify-around sm:justify-end gap-4 sm:gap-8  px:0 sm:px-5 pb-6 px-0 sm:py-3 text-white">
+  <nav class="flex flex-wrap justify-around sm:justify-end gap-4 sm:gap-8 sm:px-5 pb-6 px-0 sm:py-3 text-white">
     <router-link
       to="/"
       class="text-white font-bold no-underline hover:text-primary hover:scale-110 transition-all"
