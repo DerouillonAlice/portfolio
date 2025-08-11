@@ -1,19 +1,19 @@
 <template>
-  <div class="text-white">
+  <div class=" mx-auto text-white">
     <div class="mb-8">
       <div class="relative mb-10 lg:pl-8">
         <h1 class="h1">Compétences</h1>
         <div class="absolute -bottom-4 lg:left-10 h-2 w-36 bg-primary rounded-full"></div>
       </div>
-      <div class="space-y-8">
+      <div class="space-y-12 container">
         <!-- Slider DÉVELOPPEMENT WEB -->
-        <section class="max-w-3xl mx-auto px-4">
-          <h3 class="text-md text-secondary mb-3 text-center">DÉVELOPPEMENT WEB</h3>
+        <section class="w-2/3 mx-auto px-4">
+          <h3 class="text-md text-secondary mb-6 text-center">DÉVELOPPEMENT WEB</h3>
           <div class="relative flex justify-center">
             <Splide :options="{
               type: 'loop',
               perPage: 4,
-              gap: '1rem',
+              gap: '0.5rem',
               focus: 0,
               trimSpace: false,
               breakpoints: {
@@ -35,8 +35,8 @@
         </section>
 
         <!-- Slider DESIGN & GRAPHISME -->
-        <section class="max-w-3xl mx-auto px-4">
-          <h3 class="text-md text-secondary mb-3 text-center">DESIGN & GRAPHISME</h3>
+        <section class="w-2/3 mx-auto px-4">
+          <h3 class="text-md text-secondary mb-6 text-center">DESIGN & GRAPHISME</h3>
           <div class="relative flex justify-center">
             <Splide :options="{
               type: 'loop',
@@ -63,8 +63,8 @@
         </section>
 
         <!-- Slider MARKETING & COMMUNICATION -->
-        <section class="max-w-3xl mx-auto px-4">
-          <h3 class="text-md text-secondary mb-3 text-center">MARKETING & COMMUNICATION</h3>
+        <section class="w-2/3 mx-auto px-4">
+          <h3 class="text-md text-secondary mb-6 text-center">MARKETING & COMMUNICATION</h3>
           <div class="relative flex justify-center">
             <Splide :options="{
               type: 'loop',
@@ -91,8 +91,8 @@
         </section>
 
         <!-- Slider OUTILS & AUTOMATISATION -->
-        <section class="max-w-3xl mx-auto px-4">
-          <h3 class="text-md text-secondary mb-3 text-center">OUTILS & AUTOMATISATION</h3>
+        <section class="w-2/3 mx-auto px-4">
+          <h3 class="text-md text-secondary mb-6 text-center">OUTILS & AUTOMATISATION</h3>
           <div class="relative flex justify-center">
             <Splide :options="{
               type: 'loop',
