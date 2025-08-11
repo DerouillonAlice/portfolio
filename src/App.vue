@@ -15,18 +15,18 @@
         <!-- Contenu principal -->
         <div class="lg:overflow-y-auto lg:scrollbar-hide lg:h-full overflow-x-hidden">
           <div class="w-full max-w-[1536px] mx-auto h-full">
-            <div class="content rounded-2xl bg-background flex flex-col min-h-full overflow-hidden">
+            <div class="content rounded-2xl bg-background flex flex-col h-full overflow-hidden">
               <div class="flex-shrink-0 p-5 sm:p-6 xs:p-12 pb-0">
                 <Navbar />
               </div>
               
-              <div class="flex-1 px-3 sm:px-6 xs:px-12 pb-3 sm:pb-6 xs:pb-12 overflow-x-hidden">
+              <div class="flex-1 px-3 sm:px-6 xs:px-12 pb-3 sm:pb-6 xs:pb-12 overflow-x-hidden h-full">
                 <transition name="page" mode="out-in">
-                  <router-view :key="$route.fullPath" />
+                  <router-view :key="$route.fullPath" class="h-full" />
                 </transition>
               </div>
               
-              <div class="flex-shrink-0 p-3 sm:p-6 xs:p-12 pt-0">
+              <div class="flex-shrink-0 pb-3 px-3 sm:px-6 xs:px-10 pt-0">
                 <Footer />
               </div>
             </div>
@@ -168,24 +168,28 @@ export default {
 /* Transitions pour les pages */
 .page-enter-active, .page-leave-active {
   transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+  height: 100%;
 }
 
 .page-enter-from {
   opacity: 0;
   transform: translateY(30px);
   filter: blur(3px);
+  height: 100%;
 }
 
 .page-leave-to {
   opacity: 0;
   transform: translateY(-30px);
   filter: blur(3px);
+  height: 100%;
 }
 
 .page-enter-to, .page-leave-from {
   opacity: 1;
   transform: translateY(0);
   filter: blur(0);
+  height: 100%;
 }
 
 </style>

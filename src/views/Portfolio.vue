@@ -1,31 +1,47 @@
 <template>
-  <div class="container mx-auto text-white">
-    <div class="relative mb-8 lg:pl-8">
+  <div class="text-white h-full flex flex-col">
+    <div class="flex-shrink-0 mb-8">
+      <div class="relative mb-8 lg:pl-8">
         <h1 class="h1">Projets</h1>
-        <div class="absolute -bottom-4 lg:left-10  h-2 w-36 bg-primary rounded-full"></div>
+        <div class="absolute -bottom-4 lg:left-10 h-2 w-36 bg-primary rounded-full"></div>
       </div>
 
-    <div class="flex flex-wrap">
-      <button :class="{'bg-primary text-white font-bold': selectedCategory === 'Tout', 'text-secondary hover:text-primary': selectedCategory !== 'Tout'}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterAll">Tout</button>
-      <button v-for="category in uniqueCategories" :key="category" :class="{'bg-primary text-white font-bold': selectedCategory === category, 'text-secondary hover:text-primary': selectedCategory !== category}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterByCategory(category)">{{ category }}</button>
+      <div class="flex flex-wrap justify-center">
+        <button :class="{'bg-primary text-white font-bold': selectedCategory === 'Tout', 'text-secondary hover:text-primary': selectedCategory !== 'Tout'}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterAll">Tout</button>
+        <button v-for="category in uniqueCategories" :key="category" :class="{'bg-primary text-white font-bold': selectedCategory === category, 'text-secondary hover:text-primary': selectedCategory !== category}" class="px-4 py-2 mr-2 mb-2 rounded" @click="filterByCategory(category)">{{ category }}</button>
+      </div>
     </div>
 
-    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
-      <div v-if="paginatedProjects.length > 0" v-for="project in paginatedProjects" :key="project.id" class="p-2 rounded-lg transform transition-transform hover:scale-110 relative">
-        <router-link :to="`/portfolio/${project.id}`" class="block">
-          <img :src="project.imageUrl" alt="Image du projet" class="w-full h-36 object-cover mb-2">
-          <h3 class="text-xl text-white font-bold truncate">{{ project.title }}</h3>
-          <div class="flex space-x-1 text-sm whitespace-nowrap overflow-hidden">
-            <span v-for="(tag, index) in project.tags.slice(0, 3)" :key="tag" class="text-secondary px-1 py-1 rounded">
-              {{ tag }}<span v-if="index < Math.min(project.tags.length, 3) - 1" class="mx-1">|</span>
-            </span>
+    <div class="flex-1 flex items-center justify-center">
+      <div class="container mx-auto max-w-6xl h-full flex flex-col">
+        <div 
+          :class="[
+            'flex-1 grid gap-6 justify-items-center items-stretch',
+            'grid-cols-1 sm:grid-cols-2 lg:grid-cols-3',
+            paginatedProjects.length <= 3 ? 'auto-rows-max' : 'auto-rows-fr'
+          ]"
+          :style="paginatedProjects.length <= 3 ? 'grid-template-rows: repeat(1, minmax(0, 1fr));' : ''"
+        >
+          <div v-if="paginatedProjects.length > 0" v-for="project in paginatedProjects" :key="project.id" class="p-4 rounded-lg transform transition-transform hover:scale-105 relative w-full bg-background/50 backdrop-blur-sm border border-background2/30 flex flex-col h-full">
+            <router-link :to="`/portfolio/${project.id}`" class="block flex flex-col h-full">
+              <img :src="project.imageUrl" alt="Image du projet" class="w-full flex-1 object-cover mb-3 rounded-lg min-h-[120px]">
+              <div class="flex-shrink-0">
+                <h3 class="text-xl text-white font-bold truncate mb-2">{{ project.title }}</h3>
+                <div class="flex space-x-1 text-sm whitespace-nowrap overflow-hidden">
+                  <span v-for="(tag, index) in project.tags.slice(0, 3)" :key="tag" class="text-secondary px-1 py-1 rounded">
+                    {{ tag }}<span v-if="index < Math.min(project.tags.length, 3) - 1" class="mx-1">|</span>
+                  </span>
+                </div>
+              </div>
+            </router-link>
           </div>
-        </router-link>
+          <div v-else class="text-center text-gray-500 col-span-full">Aucun projet ne correspond à ce filtre.</div>
+        </div>
+        
+        <div class="flex justify-center mt-4 space-x-2" v-if="totalPages > 1">
+          <span v-for="page in totalPages" :key="page" @click="goToPage(page)" :class="{'bg-primary': currentPage === page, 'bg-gray-400': currentPage !== page}" class="w-4 h-4 rounded-full cursor-pointer"></span>
+        </div>
       </div>
-      <div v-else class="text-center text-gray-500">Aucun projet ne correspond à ce filtre.</div>
-    </div>
-    <div class="flex justify-center mt-4 space-x-2" v-if="totalPages > 1">
-      <span v-for="page in totalPages" :key="page" @click="goToPage(page)" :class="{'bg-primary': currentPage === page, 'bg-gray-400': currentPage !== page}" class="w-4 h-4 rounded-full cursor-pointer"></span>
     </div>
   </div>
 </template>

@@ -1,11 +1,14 @@
 <template>
-  <div class=" mx-auto text-white">
-    <div class="mb-8">
-      <div class="relative mb-10 lg:pl-8">
+  <div class="mx-auto text-white h-full flex flex-col">
+    <div class="flex-shrink-0 ">
+      <div class="relative mb-6 lg:pl-8">
         <h1 class="h1">Compétences</h1>
         <div class="absolute -bottom-4 lg:left-10 h-2 w-36 bg-primary rounded-full"></div>
       </div>
-      <div class="space-y-12 container">
+    </div>
+    
+    <div class="flex-1 flex items-center justify-center">
+      <div class="space-y-8 container mx-auto">
         <!-- Slider DÉVELOPPEMENT WEB -->
         <section class="w-2/3 mx-auto px-4">
           <h3 class="text-md text-secondary mb-6 text-center">DÉVELOPPEMENT WEB</h3>
@@ -17,7 +20,7 @@
               focus: 0,
               trimSpace: false,
               breakpoints: {
-                1024: { perPage: 3, gap: '0.75rem' },
+                1150: { perPage: 3, gap: '0.75rem' },
                 768: { perPage: 2, gap: '0.5rem' },
                 640: { perPage: 1, gap: '0.25rem' }
               },
@@ -45,7 +48,7 @@
               focus: 0,
               trimSpace: false,
               breakpoints: {
-                1024: { perPage: 3, gap: '0.75rem' },
+                1150: { perPage: 3, gap: '0.75rem' },
                 768: { perPage: 2, gap: '0.5rem' },
                 640: { perPage: 1, gap: '0.25rem' }
               },
@@ -73,7 +76,7 @@
               focus: 0,
               trimSpace: false,
               breakpoints: {
-                1024: { perPage: 3, gap: '0.75rem' },
+                1150: { perPage: 3, gap: '0.75rem' },
                 768: { perPage: 2, gap: '0.5rem' },
                 640: { perPage: 1, gap: '0.25rem' }
               },
@@ -101,7 +104,7 @@
               focus: 0,
               trimSpace: false,
               breakpoints: {
-                1024: { perPage: 3, gap: '0.75rem' },
+                1150: { perPage: 3, gap: '0.75rem' },
                 768: { perPage: 2, gap: '0.5rem' },
                 640: { perPage: 1, gap: '0.25rem' }
               },
