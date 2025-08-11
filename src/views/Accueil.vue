@@ -31,7 +31,7 @@
           <!-- Mon Dernier Projet -->
           <div class="bg-background/80 backdrop-blur-sm border border-white/20 p-8 rounded-2xl shadow-xl  transition-all duration-300 ">
             <div class="mb-6">
-              <span class="bg-gradient-to-r from-primary to-primaryhover text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
+              <span class="bg-primary text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
                Dernier Projet
               </span>
             </div>
@@ -51,7 +51,7 @@
             </div>
 
             <a :href="latestProject.link" target="_blank"
-              class="inline-flex items-center gap-2 bg-gradient-to-r from-primary to-primaryhover hover:from-primaryhover hover:to-primary text-background px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+              class="button w-fit">
               <i class="fab fa-github" v-if="latestProject.link.includes('github')"></i>
               <i class="fas fa-external-link-alt" v-else></i>
               Découvrir le projet
@@ -61,7 +61,7 @@
           <!-- Mon Expérience -->
           <div class="bg-background/80 backdrop-blur-sm border border-white/20 p-8 rounded-2xl shadow-xl transition-all duration-300 ">
             <div class="mb-6">
-              <span class="bg-gradient-to-r from-secondary to-gray-400 text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
+              <span class="bg-secondary text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
                 dernière expérience
               </span>
             </div>
@@ -91,7 +91,7 @@
             </div>
 
             <a href="https://www.zetruc.fr/" target="_blank"
-              class="inline-flex items-center gap-2 bg-gradient-to-r from-secondary to-gray-400 hover:from-gray-400 hover:to-secondary text-background px-6 py-3 rounded-full text-sm font-semibold transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-xl">
+              class="button w-fit">
               <i class="fas fa-external-link-alt"></i>
               Découvrir l'agence
             </a>

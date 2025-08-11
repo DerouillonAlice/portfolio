@@ -56,7 +56,7 @@
 
                 </div>
                 <button type="submit"
-                  class="text-white bg-background2 border-0 py-2 px-6 transition-all focus:outline-none hover:bg-primary rounded-full mt-4">Envoyer</button>
+                  class="button w-fit mt-4">Envoyer</button>
               </div>
             </form>
           </div>
