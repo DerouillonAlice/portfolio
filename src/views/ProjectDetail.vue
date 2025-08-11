@@ -1,6 +1,6 @@
 <template>
-  <div class="container mx-auto text-white py-8">
-    <div v-if="project" class="max-w-4xl ">
+  <div class="container mx-auto text-white">
+    <div v-if="project" class=" ">
       <!-- Back button -->
       <button @click="$router.go(-1)" class="mb-6 text-primary hover:text-secondary flex items-center">
         ← Retour au portfolio
@@ -8,40 +8,43 @@
 
       <!-- Project header -->
       <div class="relative mb-8 lg:pl-8">
-        <h1 class="h1">{{ project.title }}</h1>
-        <div class="absolute -bottom-4 lg:left-10 h-2 w-36 bg-primary rounded-full"></div>
-      </div>
-
-      <!-- Project type badge -->
-      <div class="mb-4 mt-12">
-        <span class="bg-secondary text-background px-4 py-2 mr-2 rounded-full text-sm font-medium">
-          {{ project.type }}
-        </span>
-
-        <span v-for="category in project.categories" :key="category" class="bg-secondary text-background px-4 py-2 mr-2 rounded-full text-sm font-medium">
-          {{ category }}
-        </span>
-      </div>
-
-      <!-- Project tags -->
-      <div class="flex flex-wrap gap-2 mb-8">
-        <span v-for="tag in project.tags" :key="tag" class="bg-primary text-background px-3 py-1 rounded-full text-sm">
-          {{ tag }}
-        </span>
-      </div>
-
-      <!-- Project image -->
-      <div class="mb-8 relative">
-        <img :src="project.imageUrl" :alt="project.title" class="w-full h-64 object-cover rounded-lg">
-        <div v-if="project.inProgress"
-          class="absolute top-0 left-0 w-full h-full bg-black bg-opacity-50 flex justify-center items-center rounded-lg">
-          <span class="text-white text-xl font-bold">En cours</span>
+        <div class="flex justify-between items-start flex-wrap gap-4">
+          <div class="flex-1">
+            <h1 class="h1">{{ project.title }}</h1>
+            <div class="absolute -bottom-4 lg:left-10 h-2 w-36 bg-primary rounded-full"></div>
+          </div>
+          <div v-if="project.link && project.link !== '#'" class="flex-shrink-0">
+            <a :href="project.link" target="_blank"
+              class="inline-flex items-center gap-2 bg-primary text-background px-6 py-3 rounded-lg hover:bg-secondary transition-colors">
+              <i class="fab fa-github" v-if="project.link.includes('github')"></i>
+              <i class="fas fa-external-link-alt" v-else></i>
+              Voir le projet
+            </a>
+          </div>
         </div>
       </div>
-      <!-- Project info sections -->
 
-
-
+      <!-- Project type badge and tags -->
+      <div class="mb-8 mt-12">
+        <div class="flex flex-wrap items-center gap-3">
+          <!-- Categories -->
+          <div class="flex flex-wrap gap-2">
+            <span class="bg-secondary text-background px-4 py-2 rounded-full text-sm font-medium">
+              {{ project.type }}
+            </span>
+            <span v-for="category in project.categories" :key="category" class="bg-secondary text-background px-4 py-2 rounded-full text-sm font-medium">
+              {{ category }}
+            </span>
+          </div>
+          
+          <!-- Tags -->
+          <div class="flex flex-wrap gap-2">
+            <span v-for="tag in project.tags" :key="tag" class="bg-primary text-background px-4 py-2 rounded-full text-sm font-medium">
+              {{ tag }}
+            </span>
+          </div>
+        </div>
+      </div>
 
       <!-- Context -->
       <div class="mb-8">
@@ -60,21 +63,12 @@
         </ul>
       </div>
 
-      <!-- Additional images for MealFlow -->
-      <div v-if="project.additionalImages" class="mb-8">
-        <h3 class="text-2xl font-semibold mb-4 text-primary">Aperçu du projet</h3>
-        <div class="grid md:grid-cols-2 gap-4">
-          <img v-for="image in project.additionalImages" :key="image" :src="image" :alt="project.title"
-            class="w-full rounded-lg">
+      <!-- Additional images - max 3 images -->
+      <div v-if="project.additionalImages && project.additionalImages.length > 0">
+        <div class="grid grid-cols-3 gap-4">
+          <img v-for="(image, index) in project.additionalImages.slice(0, 3)" :key="image" :src="image" :alt="`${project.title} - Aperçu ${index + 1}`"
+            class="w-full h-64 object-contain rounded-lg">
         </div>
-      </div>
-
-      <!-- External link -->
-      <div v-if="project.link && project.link !== '#'" class="text-center">
-        <a :href="project.link" target="_blank"
-          class="inline-block bg-primary text-white px-6 py-3 rounded-lg hover:bg-secondary transition-colors">
-          Voir le projet
-        </a>
       </div>
     </div>
 

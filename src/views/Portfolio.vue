@@ -24,7 +24,7 @@
         >
           <div v-if="paginatedProjects.length > 0" v-for="project in paginatedProjects" :key="project.id" class="p-4 rounded-lg transform transition-transform hover:scale-105 relative w-full bg-background/50 backdrop-blur-sm border border-background2/30 flex flex-col h-full">
             <router-link :to="`/portfolio/${project.id}`" class="block flex flex-col h-full">
-              <img :src="project.imageUrl" alt="Image du projet" class="w-full flex-1 object-cover mb-3 rounded-lg min-h-[120px]">
+              <img :src="project.imageUrl" alt="Image du projet" class="w-full flex-1 object-cover mb-3 rounded-lg min-h-[80px]">
               <div class="flex-shrink-0">
                 <h3 class="text-xl text-white font-bold truncate mb-2">{{ project.title }}</h3>
                 <div class="flex space-x-1 text-sm whitespace-nowrap overflow-hidden">
