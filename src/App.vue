@@ -192,4 +192,20 @@ export default {
   height: 100%;
 }
 
+.page-leave-active .splide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+  transition: opacity 0.1s ease-out !important;
+}
+
+.page-enter-from .splide {
+  opacity: 0 !important;
+  visibility: hidden !important;
+}
+
+.page-enter-to .splide {
+  opacity: 1 !important;
+  visibility: visible !important;
+  transition: opacity 0.3s ease-in 0.2s !important;
+}
 </style>

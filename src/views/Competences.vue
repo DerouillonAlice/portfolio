@@ -162,7 +162,43 @@ export default {
                 { name: 'fas fa-robot', label: "n8n" },
                 { name: 'fab fa-google', label: "Google Apps" },
             ],
+            splideInstances: []
         };
+    },
+    mounted() {
+        // Petit délai pour s'assurer que tous les composants Splide sont montés
+        this.$nextTick(() => {
+            this.initializeSplides();
+        });
+    },
+    beforeUnmount() {
+        // Détruire proprement tous les sliders avant la transition
+        this.destroySplides();
+    },
+    methods: {
+        initializeSplides() {
+            // Collecter toutes les instances Splide
+            this.splideInstances = [];
+            const splideElements = this.$el.querySelectorAll('.splide');
+            splideElements.forEach(element => {
+                if (element.__splide) {
+                    this.splideInstances.push(element.__splide);
+                }
+            });
+        },
+        destroySplides() {
+            // Détruire toutes les instances Splide
+            this.splideInstances.forEach(splide => {
+                try {
+                    if (splide && typeof splide.destroy === 'function') {
+                        splide.destroy();
+                    }
+                } catch (error) {
+                    console.warn('Erreur lors de la destruction du slider:', error);
+                }
+            });
+            this.splideInstances = [];
+        }
     }
 };
 </script>
@@ -176,5 +212,20 @@ export default {
 
 .splide__arrow--next {
     right: -1.5rem;
+}
+
+.page-leave-active .splide,
+.page-enter-from .splide {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.splide__list {
+    display: flex !important;
+}
+
+.splide__slide {
+    flex-shrink: 0 !important;
+    min-width: 0 !important;
 }
 </style>

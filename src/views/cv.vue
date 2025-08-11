@@ -16,7 +16,7 @@
           <h2 class=" text-xl lg:text-2xl font-bold text-white no-underline">Formations</h2>
           <div class="absolute -bottom-3 left-0 right-0 h-2 w-20 bg-primary rounded-full"></div>
         </div>
-        <div class="mt-4 relative flex-1">
+        <div class="mt-4 relative">
           <div class="absolute left-2 transform -translate-x-1/2 h-full border-l-2 border-primary"></div>
           <div class="flex flex-col gap-8">
             <div class="flex items-center gap-4">
