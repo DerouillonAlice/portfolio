@@ -62,7 +62,7 @@
           <div class="bg-background/80 backdrop-blur-sm border border-white/20 p-8 rounded-2xl shadow-xl transition-all duration-300 ">
             <div class="mb-6">
               <span class="bg-gradient-to-r from-secondary to-gray-400 text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
-                Mon Expérience
+                dernière expérience
               </span>
             </div>
 
