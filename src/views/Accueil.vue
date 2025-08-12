@@ -50,51 +50,66 @@
               </span>
             </div>
 
-            <a :href="latestProject.link" target="_blank"
-              class="button w-fit">
-              <i class="fab fa-github" v-if="latestProject.link.includes('github')"></i>
-              <i class="fas fa-external-link-alt" v-else></i>
-              Découvrir le projet
-            </a>
+            <div class="flex gap-3">
+              <a :href="latestProject.link" target="_blank"
+                class="button w-fit">
+                <i class="fab fa-github" v-if="latestProject.link.includes('github')"></i>
+                <i class="fas fa-external-link-alt" v-else></i>
+                Découvrir le projet
+              </a>
+
+              <router-link to="/portfolio" class="button w-fit bg-secondary hover:bg-gray-400">
+                <i class="fas fa-folder-open"></i>
+                Tous mes projets
+              </router-link>
+            </div>
           </div>
 
           <!-- Mon Expérience -->
-          <div class="bg-background/80 backdrop-blur-sm border border-white/20 p-8 rounded-2xl shadow-xl transition-all duration-300 ">
+          <div class="bg-background/80 backdrop-blur-sm border border-white/20 p-8 rounded-2xl shadow-xl transition-all duration-300 flex flex-col h-full">
             <div class="mb-6">
               <span class="bg-secondary text-background px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wide">
                 dernière expérience
               </span>
             </div>
 
-            <div class="mb-6">
-              <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300">Développeuse en Alternance</h3>
-              <div class="text-primary font-bold text-lg mb-2">Agence Zetruc</div>
-              <div class="text-gray-400 text-sm mb-4 flex items-center gap-2">
-                <i class="fas fa-calendar-alt text-primary text-xs"></i>
-                Depuis septembre 2024
-              </div>
-            </div>
+            <div class="flex-1 flex flex-col justify-between">
+              <div>
+                <div class="mb-6">
+                  <h3 class="text-2xl font-bold mb-2 text-white group-hover:text-primary transition-colors duration-300">Développeuse Web (Alternance)</h3>
+                  <div class="text-primary font-bold text-lg mb-2">Agence Zetruc</div>
+                  <div class="text-gray-400 text-sm mb-4 flex items-center gap-2">
+                    <i class="fas fa-calendar-alt text-primary text-xs"></i>
+                    Septembre 2024 - Aujourd'hui
+                  </div>
+                </div>
 
-            <div class="space-y-3 text-sm text-gray-300 mb-6">
-              <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
-                <i class="fas fa-code text-primary"></i>
-                <span>Sites WordPress (Themosis)</span>
+                <div class="space-y-3 text-sm text-gray-300 mb-6">
+                  <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
+                    <i class="fas fa-code text-primary"></i>
+                    <span>Sites WordPress (Framework Themosis)</span>
+                  </div>
+                  <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
+                    <i class="fas fa-shopping-cart text-primary"></i>
+                    <span>E-commerce PrestaShop</span>
+                  </div>
+                  <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
+                    <i class="fas fa-cogs text-primary"></i>
+                    <span>Automatisations (n8n)</span>
+                  </div>
+                  <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
+                    <i class="fas fa-message text-primary"></i>
+                    <span> Emailing & Newsletter</span>
+                  </div>
+                </div>
               </div>
-              <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
-                <i class="fas fa-shopping-cart text-primary"></i>
-                <span>E-commerce PrestaShop</span>
-              </div>
-              <div class="flex items-center gap-3 p-2 rounded-lg bg-background2/30 border border-primary/10">
-                <i class="fas fa-cogs text-primary"></i>
-                <span>Automatisations (n8n)</span>
-              </div>
-            </div>
 
-            <a href="https://www.zetruc.fr/" target="_blank"
-              class="button w-fit">
-              <i class="fas fa-external-link-alt"></i>
-              Découvrir l'agence
-            </a>
+              <a href="https://www.zetruc.fr/" target="_blank"
+                class="button w-fit">
+                <i class="fas fa-external-link-alt"></i>
+                Découvrir l'agence
+              </a>
+            </div>
           </div>
 
         </div>
