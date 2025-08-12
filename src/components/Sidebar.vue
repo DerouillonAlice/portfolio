@@ -70,7 +70,7 @@
           </router-link>
           <a href="/img/cv_Alice_Derouillon.pdf" download class="button w-full flex items-center justify-center gap-2 mt-2">
             <i class="fas fa-download"></i>
-            Télécharger le CV
+            Télécharger CV
           </a>
         </div>
         <div class="my-3">
