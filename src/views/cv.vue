@@ -91,8 +91,10 @@
           </div>
           
           <div class="mt-3 flex justify-center md:justify-end md:mt-8">
-            <a href="img/cv_Alice_Derouillon.pdf" download class="button">Télécharger CV</a>
-          </div>
+            <a href="/img/cv_Alice_Derouillon.pdf" download class="button w-fit flex items-center justify-center gap-2 mt-2">
+            <i class="fas fa-download"></i>
+            Télécharger CV
+          </a>          </div>
         </div>
       </div>
 

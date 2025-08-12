@@ -7,7 +7,7 @@
       v-slot="{ isActive }"
     >
       <span :class="{ 'text-primary': isActive }">
-        <i class="fas fa-home"></i>
+        <i class="fas fa-home text-xl"></i>
       </span>
     </router-link>
     
