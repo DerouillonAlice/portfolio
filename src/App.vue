@@ -1,8 +1,8 @@
 <template>
   <div :class="[
     activeColor, 'smooth-background-transition', 'overflow-x-hidden lg:overflow-hidden', 'min-h-screen lg:h-screen']">
-    <div class="flex justify-center lg:h-full p-2 sm:p-5">
-      <div class="w-full max-w-[1856px] grid lg:grid-cols-[320px_1fr] gap-2 sm:gap-5 lg:h-full">
+    <div class="flex justify-center items-center lg:h-full p-2 sm:p-5">
+      <div class="w-full max-w-[1920px] max-h-[1080px] grid lg:grid-cols-[320px_1fr] gap-2 lg:h-full">
         
         <div class="hidden lg:block">
           <Sidebar class="sticky top-0 w-80 h-full bg-background text-white rounded-2xl overflow-y-auto scrollbar-hide" />
